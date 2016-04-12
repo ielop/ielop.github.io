@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>IoDroid !</title>
+<title>Ielop </title>
 <link rel="icon" href="favicon.png" type="image/png">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
- 
+<?php require('functions/contato.php');?>
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -23,7 +23,7 @@
 <header id="header_wrapper">
   <div class="container">
     <div class="header_box">
-      <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+      <div class="logo"><a href="#"><img src="img/folha.png" style="width:80px;margin-top:-17px"alt="logo"></a></div>
 	  <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -36,7 +36,56 @@
 			  <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li>
 			  <li><a href="#clients" class="scroll-link">Clientes</a></li>
 			  <li><a href="#team" class="scroll-link">Equipe</a></li>
-			  <li><a href="#contact" class="scroll-link">Contato</a></li>
+			  <li><a href="#contato" class="scroll-link" data-toggle="modal">Contato</a></li>
+			  <div class="modal fade bs-example-modal-lg" id="contato" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+					<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h3 class="modal-title" id="gridSystemModalLabel">Contate-nos</h3>
+				        </div>	
+					<!-- INICIO ROW -->
+					<div class="row">
+					        <div class="col-md-12 delay-06s fadeInLef ">					
+						<form action="contact/contact_me.php" method="post" >
+                                                <div class="col-md-5 form-group has-success" style="margin-top:15px">
+                                                 <h3>Por Email</h3>
+						<input type="text" class="form-control input-text"
+				                placeholder="Nome " id="name" required
+				                data-validation-required-message="Por favor, diga-nos quem você é!" />
+						<p class="help-block"></p>
+						<input type="email" class="form-control input-text" placeholder="Email"
+				                id="email" required
+				                data-validation-required-message="Ensira seu Email" />
+						<div class="form-group">
+                                                        <select name="assunto" class="form-control ">
+                                                          <option value="">Escolha o Assunto </option>
+                                                          <option value="duvidas">Dúvidas</option>
+                                                          <option value="sugestao">Sugestão</option>
+                                                          <option value="reclamacao">Reclamação</option>
+                                                        </select>
+                                                </div>
+						<textarea rows="5" cols="50" class="form-control input-text"
+				                placeholder="Messagem" id="message" required
+				                data-validation-required-message="Por Favor! Ensira sua mensagem" minlength="5"
+				                data-validation-minlength-message="Mínimo 5 carateres!"
+				                maxlength="999" style="resize:none"></textarea>
+						<div id="success"> </div> 
+                                                <p>
+                                                <input type="submit" name="Enviar" value="Enviar"class="btn btn-primary input-btn pull-right" style="margin-top:20px">
+                                                </p>
+                                                </div>
+                                        </form>
+						</div>
+					</div>
+					<div class="modal-footer">
+    					    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+				       </div>
+				    </div>
+				  </div>
+			  </div>
+				
+
 			</ul>
       </div>
 	 </nav>
@@ -47,7 +96,7 @@
 
 <!--Hero_Section-->
 <section id="hero_section" class="top_cont_outer">
-  <div class="hero_wrapper">
+<!--  <div class="hero_wrapper">
     <div class="container">
       <div class="hero_section">
         <div class="row">
@@ -64,13 +113,14 @@
       </div>
     </div>
   </div>
+</section>-->
 </section>
 <!--Hero_Section--> 
 
 <section id="aboutUs"><!--Aboutus-->
 <div class="inner_wrapper">
   <div class="container">
-    <h2>Sobre Nós</h2>
+    <h2>Quem Somos..</h2>
     <div class"inner_section">
 	<div class="row">
       <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
@@ -80,7 +130,8 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.PageMaker including versions of Lorem Ipsum.</p> <br/>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged like Aldus PageMaker including versions of Lorem Ipsum.</p>
 </div>
-<div class="work_bottom"> <span>Want to know more..</span> <a href="#contact" class="contact_btn">Contate-nos</a> </div>       
+<div class="work_bottom"> <span>Want to know more..</span> <a href="#contact" class="contact_btn">Contate-nos</a> </div>
+	
 	   </div>
       	
       </div>
@@ -102,22 +153,22 @@
         <div class="col-lg-4">
           <div class="service_block">
             <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-android"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Android</h3>
-            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <h3 class="animated fadeInUp wow">App Android</h3>
+            <p class="animated fadeInDown wow">Nós da ielop trabalhamos na criação e desenvolvimento de aplicativos para Android. Temos uma equipe que trabalha da forma que você necessita.</p>
           </div>
         </div>
         <div class="col-lg-4 borderLeft">			
           <div class="service_block">
             <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Apple IOS</h3>
-            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <h3 class="animated fadeInUp wow">App IOS</h3>
+            <p class="animated fadeInDown wow">Sim! Além do desenvolvimento de aplicativos Android, nós da ielop somos especializado em aplicativos para IOS. Temos nossos serviços a sua disposição!</p>
           </div>
         </div>
         <div class="col-lg-4 borderLeft">
           <div class="service_block">
             <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Design</h3>
-            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <h3 class="animated fadeInUp wow">Tecnologia Web</h3>
+            <p class="animated fadeInDown wow">Nossa equipe é preparada para criar seu site, para manutenção e novos projetos. Temos uma variedade de ferramentas de desenvolvimento para sua maior comodidade! </p>
           </div>
         </div>
       </div>
@@ -301,154 +352,102 @@
 <section class="page_section team" id="team"><!--main-section team-start-->
   <div class="container">
     <h2>Equipe</h2>
-    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing.</h6>
 
 <div class="member-area">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="member wow bounceInUp animated">
-								<div class="member-container" data-wow-delay=".1s">
-									<div class="inner-container">
-										<div class="author-avatar">									
-											<img class="img-circle" src="img/team_pic1.jpg" alt="Team Menber">
-										</div><!-- /.author-avatar -->
-
-										<div class="member-details">
-											<div class="member-top">									
-												<h4 class="name">
-													John Doe
-												</h4>
-												<span class="designation">
-													Manager
-												</span>
-											</div><!-- /.member-top -->
-
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.
-											</p>
-											<div class="member-social-link">
-												<a href="#" class="twitter-btn"><i class="fa fa-twitter"></i></a>
-												<a href="#" class="facebook-btn"><i class="fa fa-facebook"></i></a>
-												<a href="#" class="dribbble-btn"><i class="fa fa-dribbble"></i></a>
-												<a href="#" class="linkedin-btn"><i class="fa fa-linkedin"></i></a>
-											</div><!-- /.member-social-link -->
-										</div><!-- /.member-details -->
-									</div><!-- /.inner-container -->
-								</div><!-- /.member-container -->
-							</div><!-- /.member -->
-						</div>
-
-						<div class="col-md-6">
-							<div class="member wow bounceInUp animated">
-								<div class="member-container" data-wow-delay=".3s">
-									<div class="inner-container">
-										<div class="author-avatar">									
-											<img class="img-circle" src="img/team_pic2.jpg" alt="Team Menber">
-										</div><!-- /.author-avatar -->
-										<div class="member-details">
-											<div class="member-top">									
-												<h4 class="name">
-													Mark lores
-												</h4>
-												<span class="designation">
-													Web Developer
-												</span>
-											</div><!-- /.member-top -->
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.
-											</p>
-											<div class="member-social-link">
-												<a href="#" class="twitter-btn"><i class="fa fa-twitter"></i></a>
-												<a href="#" class="facebook-btn"><i class="fa fa-facebook"></i></a>
-												<a href="#" class="dribbble-btn"><i class="fa fa-dribbble"></i></a>
-												<a href="#" class="linkedin-btn"><i class="fa fa-linkedin"></i></a>
-											</div><!-- /.member-social-link -->
-										</div><!-- /.member-details -->
-									</div><!-- /.inner-container -->
-								</div><!-- /.member-container -->
-							</div><!-- /.member -->
-						</div>
-
-						<div class="col-md-6">
-							<div class="member wow bounceInUp animated" >
-								<div class="member-container" data-wow-delay=".5s">
-									<div class="inner-container">
-										<div class="author-avatar">									
-											<img class="img-circle" src="img/team_pic3.jpg" alt="Team Menber">
-										</div><!-- /.author-avatar -->
-										<div class="member-details">
-											<div class="member-top">									
-												<h4 class="name">
-													Thomas Lere
-												</h4>
-												<span class="designation">
-													UX Designer
-												</span>
-											</div><!-- /.member-top -->
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.
-											</p>
-											<div class="member-social-link">
-												<a href="#" class="twitter-btn"><i class="fa fa-twitter"></i></a>
-												<a href="#" class="facebook-btn"><i class="fa fa-facebook"></i></a>
-												<a href="#" class="dribbble-btn"><i class="fa fa-dribbble"></i></a>
-												<a href="#" class="linkedin-btn"><i class="fa fa-linkedin"></i></a>
-											</div><!-- /.member-social-link -->
-										</div><!-- /.member-details -->
-									</div><!-- /.inner-container -->
-								</div><!-- /.member-container -->
-							</div><!-- /.member -->
-						</div>
-
-						<div class="col-md-6">
-							<div class="member wow bounceInUp animated">
-								<div class="member-container" data-wow-delay=".7s">
-									<div class="inner-container">
-										<div class="author-avatar">									
-											<img class="img-circle" src="img/team_pic4.jpg" alt="Team Menber">
-										</div><!-- /.author-avatar -->
-										<div class="member-details">
-											<div class="member-top">									
-												<h4 class="name">
-													Grintel Mark
-												</h4>
-												<span class="designation">
-													Web Designer
-												</span>
-											</div><!-- /.member-top -->
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.
-											</p>
-											<div class="member-social-link">
-												<a href="#" class="twitter-btn"><i class="fa fa-twitter"></i></a>
-												<a href="#" class="facebook-btn"><i class="fa fa-facebook"></i></a>
-												<a href="#" class="dribbble-btn"><i class="fa fa-dribbble"></i></a>
-												<a href="#" class="linkedin-btn"><i class="fa fa-linkedin"></i></a>
-											</div><!-- /.member-social-link -->
-										</div><!-- /.member-details -->
-									</div><!-- /.inner-container -->
-								</div><!-- /.member-container -->
-							</div><!-- /.member -->
-						</div>
-					</div><!-- /.row -->
-				</div>
-				
+					<div class="container">
+    <div class="service_wrapper">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="service_block">
+            <div class="service_icon delay-03s img-circle animated wow  zoomIn "> <span><img src=".." class="img-circle"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Saulo Goes</h3>
+		<a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#saulo" aria-expanded="false" aria-controls="collapseExample">
+		  Saiba Mais..
+		</a>
+		<div class="collapse" id="saulo">
+		  <div class="well" style="margin-top:5px">
+		    ...
+		  </div>
+		</div>
+          </div>
+        </div>
+        <div class="col-lg-2" style="margin-left:45px">
+          <div class="service_block">
+            <div class="service_icon icon2  img-circle delay-03s animated wow zoomIn"> <span><img src="img/suilan.jpg" class="img-circle"></span> </div>
+            <h3 class="animated fadeInUp wow">Suilan Maria</h3>
+		 <a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#suilan" aria-expanded="false" aria-controls="collapseExample">
+                  Saiba mais.
+                </a>
+                <div class="collapse" id="suilan">
+                  <div class="well" style="margin-top:5px">
+                    ...
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-2 " style="margin-left:45px">
+          <div class="service_block">
+            <div class="service_icon icon3  delay-03s animated wow zoomIn img-circle"> <span><img src="img/guilherme.jpg" class="img-circle"></i></span> </div>
+            <center><h3 class="animated fadeInUp wow">Guilherme Rian</h3></center>
+	    <h5 class="animated fadeInUp wow">Analista de Infraestrutura / Redes</h5></center>
+		 <a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#guilherme" aria-expanded="false" aria-controls="collapseExample">
+                  Saiba mais.
+                </a>
+                <div class="collapse" id="guilherme">
+                  <div class="well" style="margin-top:5px">
+                    "Responsável por criar toda a infraestrutura de nosso site e do nosso ambiente de desenvolvimento."
+                  </div>
+                </div>
+          </div>
+        </div>
+	<div class="col-lg-2 " style="margin-left:45px">
+          <div class="service_block">
+            <div class="service_icon icon3  delay-03s animated wow  img-circle zoomIn"> <span><img src="img/rafael.jpg" style="width:87px;height:87px"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Rafael Pinheiro</h3>
+	    <h5 class="animated fadeInUp wow">Analistas de Sistemas , Desenvolvedor Mobile Android</h5>
+		<a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#rafael" aria-expanded="false" aria-controls="collapseExample">
+                  Conheça mais.
+                </a>
+                <div class="collapse" id="rafael">
+                  <div class="well" style="margin-top:5px">
+			"A Ielop busca ser referência no mercado mobile , por isso tenho o prazer de colaborar para que a mesma chegue a ser objetivo.Sou responsável por realizar Análise e Desenvolvimento das aplicações em Android e brevemente IOS , tendo ainda experiência de 4 anos como Analistas de Sistemas JAVA WEB." 
+                  </div>
+                </div>
+          </div>
+        </div>
+	<div class="col-lg-2 " style="margin-left:45px">
+          <div class="service_block">
+            <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Diego</h3>
+		<a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#diego" aria-expanded="false" aria-controls="collapseExample">
+                  Conheça mais..
+                </a>
+                <div class="collapse" id="diego">
+                  <div class="well" style="margin-top:5px">
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+           </div>
+  </div>
 
 </div>
 </section>
 <!--/Team-->
 <!--Footer-->
-<footer class="footer_wrapper" id="contact">
-  <div class="container">
+<!--<footer class="footer_wrapper" id="contact">
+  <div class="container col-md-12">
     <section class="page_section contact" id="contact">
       <div class="contact_section">
         <h2>Contate-nos</h2>
         <div class="row">
           <div class="col-lg-4">
-            
+
           </div>
-          <div class="col-lg-4">
-           
+	  <div class="col-lg-4">
+
           </div>
           <div class="col-lg-4">
           
@@ -456,10 +455,12 @@
         </div>
       </div>
       <div class="row">
- 
-        <div class="col-lg-12 wow fadeInLeft delay-06s">
+	<div class="col-md-6 wow fadeInLeft delay-06s">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9778578528026!2d-44.24676768566801!3d-2.514129688905956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e025646f60f%3A0xae6ce22b5089efd0!2zQ29oYW1hLCBTw6NvIEx1w61zIC0gTUE!5e0!3m2!1spt-BR!2sbr!4v1460148705069" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>	
+        </div> 
+        <div class="col-md-6 wow fadeInLeft delay-06s">
           <div class="form">
- 			<!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+ 			NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form
 		<form action="contact/contact_me.php" method="post" name="sentMessage" id="contactForm"  novalidate> 
 		<div class="control-group">
 		<div class="controls">
@@ -486,7 +487,7 @@
 		maxlength="999" style="resize:none"></textarea>
 		</div>
 		</div> 		 
-		<div id="success"> </div> <!-- For success/fail messages -->
+		<div id="success"> </div>  For success/fail messages 
 		<button type="submit" class="btn btn-primary input-btn pull-right">Enviar</button><br />
 		</form>
           </div>
@@ -494,11 +495,11 @@
 		
       </div>
     </section>
-  </div>
+  </div>-->
   <div class="container">
-    <div class="footer_bottom"><span>ioDroid © 2016,    Desenvolvido por IODROID. </span> </div>
+    <div class="footer_bottom"><span>Ielop © 2016,    Desenvolvido por Ielop. </span> </div>
   </div>
-</footer>
+<!--</footer>-->
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -510,6 +511,5 @@
  <script src="contact/jqBootstrapValidation.js"></script>
  <script src="contact/contact_me.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
-
 </body>
 </html>
