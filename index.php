@@ -36,55 +36,7 @@
 			  <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li>
 			  <li><a href="#clients" class="scroll-link">Clientes</a></li>
 			  <li><a href="#team" class="scroll-link">Equipe</a></li>
-			  <li><a href="#contato" class="scroll-link" data-toggle="modal">Contato</a></li>
-			  <div class="modal fade bs-example-modal-lg" id="contato" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-				  <div class="modal-dialog modal-lg">
-				    <div class="modal-content">
-					<div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h3 class="modal-title" id="gridSystemModalLabel">Contate-nos</h3>
-				        </div>	
-					<!-- INICIO ROW -->
-					<div class="row">
-					        <div class="col-md-12 delay-06s fadeInLef ">					
-						<form action="contact/contact_me.php" method="post" >
-                                                <div class="col-md-5 form-group has-success" style="margin-top:15px">
-                                                 <h3>Por Email</h3>
-						<input type="text" class="form-control input-text"
-				                placeholder="Nome " id="name" required
-				                data-validation-required-message="Por favor, diga-nos quem você é!" />
-						<p class="help-block"></p>
-						<input type="email" class="form-control input-text" placeholder="Email"
-				                id="email" required
-				                data-validation-required-message="Ensira seu Email" />
-						<div class="form-group">
-                                                        <select name="assunto" class="form-control ">
-                                                          <option value="">Escolha o Assunto </option>
-                                                          <option value="duvidas">Dúvidas</option>
-                                                          <option value="sugestao">Sugestão</option>
-                                                          <option value="reclamacao">Reclamação</option>
-                                                        </select>
-                                                </div>
-						<textarea rows="5" cols="50" class="form-control input-text"
-				                placeholder="Messagem" id="message" required
-				                data-validation-required-message="Por Favor! Ensira sua mensagem" minlength="5"
-				                data-validation-minlength-message="Mínimo 5 carateres!"
-				                maxlength="999" style="resize:none"></textarea>
-						<div id="success"> </div> 
-                                                <p>
-                                                <input type="submit" name="Enviar" value="Enviar"class="btn btn-primary input-btn pull-right" style="margin-top:20px">
-                                                </p>
-                                                </div>
-                                        </form>
-						</div>
-					</div>
-					<div class="modal-footer">
-    					    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-				       </div>
-				    </div>
-				  </div>
-			  </div>
-				
+			  <li><a href="#contact" class="scroll-link" >Contato</a></li>
 
 			</ul>
       </div>
@@ -390,7 +342,6 @@
           <div class="service_block">
             <div class="service_icon icon3  delay-03s animated wow zoomIn img-circle"> <span><img src="img/guilherme.jpg" class="img-circle"></i></span> </div>
             <center><h3 class="animated fadeInUp wow">Guilherme Rian</h3></center>
-	    <h5 class="animated fadeInUp wow">Analista de Infraestrutura / Redes</h5></center>
 		 <a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#guilherme" aria-expanded="false" aria-controls="collapseExample">
                   Saiba mais.
                 </a>
@@ -405,7 +356,6 @@
           <div class="service_block">
             <div class="service_icon icon3  delay-03s animated wow  img-circle zoomIn"> <span><img src="img/rafael.jpg" style="width:87px;height:87px"></i></span> </div>
             <h3 class="animated fadeInUp wow">Rafael Pinheiro</h3>
-	    <h5 class="animated fadeInUp wow">Analistas de Sistemas , Desenvolvedor Mobile Android</h5>
 		<a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#rafael" aria-expanded="false" aria-controls="collapseExample">
                   Conheça mais.
                 </a>
@@ -437,15 +387,15 @@
 </section>
 <!--/Team-->
 <!--Footer-->
-<!--<footer class="footer_wrapper" id="contact">
+<footer class="footer_wrapper" id="contact">
   <div class="container col-md-12">
     <section class="page_section contact" id="contact">
       <div class="contact_section">
         <h2>Contate-nos</h2>
         <div class="row">
-          <div class="col-lg-4">
+<!--          <div class="col-lg-4">
 
-          </div>
+          </div>-->
 	  <div class="col-lg-4">
 
           </div>
@@ -455,12 +405,13 @@
         </div>
       </div>
       <div class="row">
+	
 	<div class="col-md-6 wow fadeInLeft delay-06s">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9778578528026!2d-44.24676768566801!3d-2.514129688905956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e025646f60f%3A0xae6ce22b5089efd0!2zQ29oYW1hLCBTw6NvIEx1w61zIC0gTUE!5e0!3m2!1spt-BR!2sbr!4v1460148705069" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>	
         </div> 
-        <div class="col-md-6 wow fadeInLeft delay-06s">
+        <div class="col-md-5 wow fadeInLeft delay-06s animated borderLeft zoomIn">
           <div class="form">
- 			NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form
+ 		<!--	NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
 		<form action="contact/contact_me.php" method="post" name="sentMessage" id="contactForm"  novalidate> 
 		<div class="control-group">
 		<div class="controls">
@@ -477,7 +428,6 @@
 		data-validation-required-message="Ensira seu Email" />
 		</div>
 		</div> 	
-
 		<div class="control-group">
 		<div class="controls">
 		<textarea rows="10" cols="100" class="form-control input-text" 
@@ -487,7 +437,7 @@
 		maxlength="999" style="resize:none"></textarea>
 		</div>
 		</div> 		 
-		<div id="success"> </div>  For success/fail messages 
+		<div id="success"> </div>   
 		<button type="submit" class="btn btn-primary input-btn pull-right">Enviar</button><br />
 		</form>
           </div>
@@ -495,7 +445,7 @@
 		
       </div>
     </section>
-  </div>-->
+  </div>
   <div class="container">
     <div class="footer_bottom"><span>Ielop © 2016,    Desenvolvido por Ielop. </span> </div>
   </div>
