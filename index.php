@@ -9,6 +9,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
 <?php require('functions/contato.php');?>
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
