@@ -29,6 +29,7 @@ h2,h3 {
     
 }
 .buttons_header{
-    background-color: #CBE86B;
+    background: #CBE86B;
     color: #F2E9E1;
+    border-radius: 5%;
 }

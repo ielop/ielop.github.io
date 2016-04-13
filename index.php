@@ -30,9 +30,9 @@
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         </div>
-	    <div id="main-nav" class=" collapse navbar-collapse navStyle ">
-			<ul class="nav navbar-nav" id="mainNav">
-			  <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
+	    <div id="main-nav" class=" collapse navbar-collapse navStyle">
+			<ul class="nav navbar-nav " id="mainNav">
+			  <li class="active"><a href="#hero_section" class="scroll-link ">Home</a></li>
 			  <li><a href="#aboutUs" class="scroll-link ">Sobre</a></li>
 			  <li><a href="#service" class="scroll-link">Serviços</a></li>
 			  <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li>
@@ -315,70 +315,26 @@
         <div class="col-lg-2">
           <div class="service_block">
             <div class="service_icon delay-03s img-circle animated wow  zoomIn "> <span><img src=".." class="img-circle"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Saulo Goes</h3>
-		<a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#saulo" aria-expanded="false" aria-controls="collapseExample">
-		  Saiba Mais..
-		</a>
-		<div class="collapse" id="saulo">
-		  <div class="well" style="margin-top:5px">
-		    ...
-		  </div>
-		</div>
           </div>
         </div>
         <div class="col-lg-2" style="margin-left:45px">
           <div class="service_block">
             <div class="service_icon icon2  img-circle delay-03s animated wow zoomIn"> <span><img src="img/suilan.jpg" class="img-circle"></span> </div>
-            <h3 class="animated fadeInUp wow">Suilan Maria</h3>
-		 <a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#suilan" aria-expanded="false" aria-controls="collapseExample">
-                  Saiba mais.
-                </a>
-                <div class="collapse" id="suilan">
-                  <div class="well" style="margin-top:5px">
-                    ...
-                  </div>
-                </div>
           </div>
         </div>
         <div class="col-lg-2 " style="margin-left:45px">
           <div class="service_block">
-            <div class="service_icon icon3  delay-03s animated wow zoomIn img-circle"> <span><img src="img/guilherme.jpg" class="img-circle"></i></span> </div>
-            <center><h3 class="animated fadeInUp wow">Guilherme Rian</h3></center>
-		 <a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#guilherme" aria-expanded="false" aria-controls="collapseExample">
-                  Saiba mais.
-                </a>
-                <div class="collapse" id="guilherme">
-                  <div class="well" style="margin-top:5px">
-                    "Responsável por criar toda a infraestrutura de nosso site e do nosso ambiente de desenvolvimento."
-                  </div>
-                </div>
+            <div class="service_icon icon3  delay-03s animated wow zoomIn img-cicle"> <span><img src="img/guilherme.jpg" class="img-circle"></i></span> </div>
           </div>
         </div>
 	<div class="col-lg-2 " style="margin-left:45px">
           <div class="service_block">
             <div class="service_icon icon3  delay-03s animated wow  img-circle zoomIn"> <span><img src="img/rafael.jpg" style="width:87px;height:87px"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Rafael Pinheiro</h3>
-		<a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#rafael" aria-expanded="false" aria-controls="collapseExample">
-                  Conheça mais.
-                </a>
-                <div class="collapse" id="rafael">
-                  <div class="well" style="margin-top:5px">
-			"A Ielop busca ser referência no mercado mobile , por isso tenho o prazer de colaborar para que a mesma chegue a ser objetivo.Sou responsável por realizar Análise e Desenvolvimento das aplicações em Android e brevemente IOS , tendo ainda experiência de 4 anos como Analistas de Sistemas JAVA WEB." 
-                  </div>
-                </div>
           </div>
         </div>
 	<div class="col-lg-2 " style="margin-left:45px">
           <div class="service_block">
             <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Diego</h3>
-		<a class="btn btn-primary input-btn pull-center" role="button" data-toggle="collapse" href="#diego" aria-expanded="false" aria-controls="collapseExample">
-                  Conheça mais..
-                </a>
-                <div class="collapse" id="diego">
-                  <div class="well" style="margin-top:5px">
-                  </div>
-                </div>
           </div>
         </div>
       </div>
@@ -409,7 +365,7 @@
       <div class="row">
 	
 	<div class="col-md-6 wow fadeInLeft delay-06s">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9778578528026!2d-44.24676768566801!3d-2.514129688905956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e025646f60f%3A0xae6ce22b5089efd0!2zQ29oYW1hLCBTw6NvIEx1w61zIC0gTUE!5e0!3m2!1spt-BR!2sbr!4v1460148705069" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>	
+		<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9778578528026!2d-44.24676768566801!3d-2.514129688905956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e025646f60f%3A0xae6ce22b5089efd0!2zQ29oYW1hLCBTw6NvIEx1w61zIC0gTUE!5e0!3m2!1spt-BR!2sbr!4v1460148705069" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></center>
         </div> 
         <div class="col-md-5 wow fadeInLeft delay-06s animated borderLeft zoomIn">
           <div class="form">
@@ -418,8 +374,7 @@
 		<div class="control-group">
 		<div class="controls">
 		<input type="text" class="form-control input-text" 
-		placeholder="Nome " id="name" required
-		data-validation-required-message="Por favor, diga-nos quem você é!" />
+		placeholder="Nome " id="name" required  data-validation-required-message="Por favor, diga-nos quem você é!"/>
 		<p class="help-block"></p>
 		</div>
 		</div> 	
