@@ -32,3 +32,6 @@ h2,h3 {
     background-color: #CBE86B;
     color: #F2E9E1;
 }
+.navbar-inverse .navbar-nav > .active > a{
+    background-color: #CBE86B;
+}
