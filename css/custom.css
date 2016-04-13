@@ -6,10 +6,10 @@
 }
 
 h2,h3 {
-	color: #1C140D;
+    color: #1C140D;
 }
 .section-title h2{
-	color: #1C140D;
+    color: #1C140D;
 }
 .service_icon,
 .service_icon.icon2,
@@ -19,5 +19,16 @@ h2,h3 {
     overflow: hidden;
 }
 .service_icon i{
-	color: #CBE86B;
+    color: #CBE86B;
+}
+#contact{
+    background: #1C140D;
+}
+#header_wrapper{
+    background: #1C140D;
+    
+}
+.buttons_header{
+    background-color: #CBE86B;
+    color: #F2E9E1;
 }

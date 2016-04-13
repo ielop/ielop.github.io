@@ -9,6 +9,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet">
 <link href="css/custom.css" rel="stylesheet" type="text/css">
 <?php require('functions/contato.php');?>
 <!--[if lt IE 9]>
@@ -29,10 +30,10 @@
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         </div>
-	    <div id="main-nav" class="collapse navbar-collapse navStyle">
+	    <div id="main-nav" class=" collapse navbar-collapse navStyle ">
 			<ul class="nav navbar-nav" id="mainNav">
 			  <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
-			  <li><a href="#aboutUs" class="scroll-link">Sobre</a></li>
+			  <li><a href="#aboutUs" class="scroll-link ">Sobre</a></li>
 			  <li><a href="#service" class="scroll-link">Serviços</a></li>
 			  <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li>
 			  <li><a href="#clients" class="scroll-link">Clientes</a></li>
@@ -105,7 +106,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="service_block">
-            <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-android"></i></span> </div>
+            <div class="service_icon delay-03s animated wow  zoomIn "> <span><i class="fa fa-android"></i></span> </div>
             <h3 class="animated fadeInUp wow">App Android</h3>
             <p class="animated fadeInDown wow">Nós da ielop trabalhamos na criação e desenvolvimento de aplicativos para Android. Temos uma equipe que trabalha da forma que você necessita.</p>
           </div>
