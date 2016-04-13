@@ -33,3 +33,6 @@ h2,h3 {
     color: #F2E9E1;
     border-radius: 5%;
 }
+.navbar-inverse .navbar-nav > .active > a{
+    background-color: #CBE86B;
+}
