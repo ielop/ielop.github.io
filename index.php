@@ -24,7 +24,12 @@
 <header id="header_wrapper">
   <div class="container">
     <div class="header_box">
-      <div class="logo"><a href="#"><img src="img/folha.png" style="width:80px;margin-top:-17px"alt="logo"></a></div>
+      <div class="logo">
+      Ielop
+      <br>
+      Inspiration and Development
+      <!-- <a href="#"><img src="img/folha.png" style="width:80px;margin-top:-17px"alt="logo"></a> -->
+      </div>
 	  <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>

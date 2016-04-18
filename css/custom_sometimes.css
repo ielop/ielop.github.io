@@ -1,38 +1,77 @@
-#service{
-	background: #F2E9E1;
+/*Titulo de todas as sessões*/
+h2,h3 {
+    color: #000;
 }
+
+#aboutUs .contact_btn{
+    border-color: #CBE86B;
+    color: #CBE86B;
+}
+
+#aboutUs .contact_btn:hover{
+    background-color: #CBE86B;
+    color: #4F1F42;
+    text-decoration: none;
+}
+
+/*Background da sessão de serviços*/
+#service{
+	background: #EBEDE4;
+}
+
+/*Filtros do portfolio*/
+#filters ul li a:hover h5, #filters ul li a.active h5{
+    border-color: #CBE86B;
+    color: #CBE86B;
+}
+
+/*Linha da sessão de clientes*/
 .client_logos {
     background: #CBE86B;
 }
 
-h2,h3 {
-    color: #1C140D;
-}
 .section-title h2{
     color: #1C140D;
 }
 .service_icon,
 .service_icon.icon2,
 .service_icon.icon3{
-    border-color: #CBE86B;
+    border-color: #A2D850;
     border-radius: 50%;
     overflow: hidden;
 }
 .service_icon i{
-    color: #CBE86B;
+    color: #A2D850;
 }
 #contact{
-    background: #1C140D;
+    background: #4F1F42;
 }
+#contactForm button{
+    border:1px solid #fff;
+    background-color: #4F1F42;
+}
+#contactForm button:hover{
+    border:1px solid #CBE86B;
+    background-color: #CBE86B;
+    color: #4F1F42;
+}
+
+/*Menu no topo da página*/
 #header_wrapper{
-    background: #1C140D;
-    
+    background: #4F1F42;    
 }
+
 .buttons_header{
     background: #CBE86B;
     color: #F2E9E1;
     border-radius: 5%;
 }
-.navbar-inverse .navbar-nav > .active > a{
-    background-color: #CBE86B;
+.header_box .navbar-inverse .navbar-nav > .active > a{
+    background-color: #A2D850;
+}
+.header_box .navbar-inverse .navbar-nav > .active > a:hover{
+    background-color: #A2D850;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    color:#CBE86B;
 }
