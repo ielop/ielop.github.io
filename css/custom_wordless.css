@@ -1,0 +1,38 @@
+#service{
+	background: #F2E9E1;
+}
+.client_logos {
+    background: #CBE86B;
+}
+
+h2,h3 {
+    color: #1C140D;
+}
+.section-title h2{
+    color: #1C140D;
+}
+.service_icon,
+.service_icon.icon2,
+.service_icon.icon3{
+    border-color: #CBE86B;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.service_icon i{
+    color: #CBE86B;
+}
+#contact{
+    background: #1C140D;
+}
+#header_wrapper{
+    background: #1C140D;
+    
+}
+.buttons_header{
+    background: #CBE86B;
+    color: #F2E9E1;
+    border-radius: 5%;
+}
+.navbar-inverse .navbar-nav > .active > a{
+    background-color: #CBE86B;
+}
