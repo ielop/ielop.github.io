@@ -108,25 +108,32 @@
     <h2>O que disponibilizamos a você?</h2>
     <div class="service_wrapper">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="service_block">
             <div class="service_icon delay-03s animated wow  zoomIn "> <span><i class="fa fa-android"></i></span> </div>
             <h3 class="animated fadeInUp wow">App Android</h3>
-            <p class="animated fadeInDown wow">Nós da ielop trabalhamos na criação e desenvolvimento de aplicativos para Android. Temos uma equipe que trabalha da forma que você necessita.</p>
+        <!--    <p class="animated fadeInDown wow">Nós da ielop trabalhamos na criação e desenvolvimento de aplicativos para Android. Temos uma equipe que trabalha da forma que você necessita.</p>-->
           </div>
         </div>
-        <div class="col-lg-4 borderLeft">			
+        <div class="col-lg-3 borderLeft">			
           <div class="service_block">
             <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div>
             <h3 class="animated fadeInUp wow">App IOS</h3>
-            <p class="animated fadeInDown wow">Sim! Além do desenvolvimento de aplicativos Android, nós da ielop somos especializado em aplicativos para IOS. Temos nossos serviços a sua disposição!</p>
+            <!--<p class="animated fadeInDown wow">Sim! Além do desenvolvimento de aplicativos Android, nós da ielop somos especializado em aplicativos para IOS. Temos nossos serviços a sua disposição!</p>-->
           </div>
         </div>
-        <div class="col-lg-4 borderLeft">
+        <div class="col-lg-3 borderLeft">
           <div class="service_block">
             <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div>
             <h3 class="animated fadeInUp wow">Tecnologia Web</h3>
-            <p class="animated fadeInDown wow">Nossa equipe é preparada para criar seu site, para manutenção e novos projetos. Temos uma variedade de ferramentas de desenvolvimento para sua maior comodidade! </p>
+            <!--<p class="animated fadeInDown wow">Nossa equipe é preparada para criar seu site, para manutenção e novos projetos. Temos uma variedade de ferramentas de desenvolvimento para sua maior comodidade! </p>-->
+          </div>
+        </div>
+	<div class="col-lg-3 borderLeft">
+          <div class="service_block">
+            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Web Services</h3>
+            <!--<p class="animated fadeInDown wow">Sim! Além do desenvolvimento de aplicativos Android, nós da ielop somos especializado em aplicativos para IOS. Temos nossos serviços a sua disposição!</p>-->
           </div>
         </div>
       </div>
