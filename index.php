@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Ielop </title>
+<title>ielop </title>
 <link rel="icon" href="favicon.png" type="image/png">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
@@ -54,15 +54,16 @@
 
 <!--Hero_Section-->
 <section id="hero_section" class="top_cont_outer">
-<!--  <div class="hero_wrapper">
+  <div class="hero_wrapper">
     <div class="container">
       <div class="hero_section">
         <div class="row">
           <div class="col-lg-5 col-sm-7">
             <div class="top_left_cont zoomIn wow animated"> 
-              <h2>We are the <strong>Leaders</strong> in IT Industry</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-              <a href="#service" class="read_more2">Read more</a> </div>
+              <h2 ><strong><font color="#4F1F42">ielop </strong><br>Inspiration and Development</font></h2>
+              <p> </p>
+              <a href="#service" class="read_more2">O que fazemos?</a> </div>
+
           </div>
           <div>
 			<img src="img/mainImg.png" class="bannerImg zoomIn wow animated" alt="" />
@@ -71,7 +72,7 @@
       </div>
     </div>
   </div>
-</section>-->
+</section>
 </section>
 <!--Hero_Section--> 
 
@@ -131,7 +132,7 @@
         </div>
 	<div class="col-lg-3 borderLeft">
           <div class="service_block">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div>
+            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-globe"></i></span> </div>
             <h3 class="animated fadeInUp wow">Web Services</h3>
             <!--<p class="animated fadeInDown wow">Sim! Além do desenvolvimento de aplicativos Android, nós da ielop somos especializado em aplicativos para IOS. Temos nossos serviços a sua disposição!</p>-->
           </div>
