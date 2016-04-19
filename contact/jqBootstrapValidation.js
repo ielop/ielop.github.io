@@ -88,7 +88,7 @@
             validatorNames = [];
           // create message container if not exists
           if (!$helpBlock.length && settings.options.autoAdd && settings.options.autoAdd.helpBlocks) {
-              $helpBlock = $('<div class="help-block" style="color:red" />');
+              $helpBlock = $('<div class="help-block" style="color:#A2D850" />');
               $controlGroup.find('.controls').append($helpBlock);
 							createdElements.push($helpBlock[0]);
           }

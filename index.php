@@ -367,32 +367,29 @@
         </div>
       </div>
       <div class="row">
-	
-	<div class="col-md-6 wow fadeInLeft delay-06s">
-		<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9778578528026!2d-44.24676768566801!3d-2.514129688905956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e025646f60f%3A0xae6ce22b5089efd0!2zQ29oYW1hLCBTw6NvIEx1w61zIC0gTUE!5e0!3m2!1spt-BR!2sbr!4v1460148705069" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></center>
-        </div> 
-        <div class="col-md-5 wow fadeInLeft delay-06s animated borderLeft zoomIn">
+	<div class="col-md-6 wow fadeInLeft delay-06s" >
+	<img src="img/notas.png" style="margin-left:70px">
+	</div>
+        <div class="col-md-5 wow fadeInLeft delay-06s animated  borderLeft zoomIn">
           <div class="form">
  		<!--	NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
 		<form action="contact/contact_me.php" method="post" name="sentMessage" id="contactForm"  novalidate> 
 		<div class="control-group">
 		<div class="controls">
 		<input type="text" class="form-control input-text" 
-		placeholder="Nome " id="name" required  data-validation-required-message="Por favor, diga-nos quem você é!"/>
-		<p class="help-block"></p>
+		placeholder="Nome " id="name" required  data-validation-required-message="Diga-nos quem você é!"/>
 		</div>
 		</div> 	
 		<div class="control-group">
 		<div class="controls">
 		<input type="email" class="form-control input-text" placeholder="Email" 
-		id="email" required
-		data-validation-required-message="Ensira seu Email" />
+		id="email" required data-validation-required-message="Ensira seu Email" />
 		</div>
 		</div> 	
 		<div class="control-group">
 		<div class="controls">
 		<textarea rows="10" cols="100" class="form-control input-text" 
-		placeholder="Messagem" id="message" required
+		placeholder="Messagem" id="message" required 
 		data-validation-required-message="Por Favor! Ensira sua mensagem" minlength="5" 
 		data-validation-minlength-message="Mínimo 5 carateres!" 
 		maxlength="999" style="resize:none"></textarea>
@@ -403,7 +400,9 @@
 		</form>
           </div>
         </div>
-		
+	<div class="col-md-6 wow fadeInLeft delay-06s" >
+                <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9778578528026!2d-44.24676768566801!3d-2.514129688905956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e025646f60f%3A0xae6ce22b5089efd0!2zQ29oYW1hLCBTw6NvIEx1w61zIC0gTUE!5e0!3m2!1spt-BR!2sbr!4v1460148705069" width="500" height="150" frameborder="0" style="border:0; margin-top:-150px" allowfullscreen></iframe></center>
+        </div>
       </div>
     </section>
   </div>
