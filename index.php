@@ -10,7 +10,7 @@
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link href="css/custom_sometimes.css" rel="stylesheet">
-<?php require('functions/contato.php');?>
+
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -25,10 +25,7 @@
   <div class="container">
     <div class="header_box">
       <div class="logo">
-      Ielop
-      <br>
-      Inspiration and Development
-      <!-- <a href="#"><img src="img/folha.png" style="width:80px;margin-top:-17px"alt="logo"></a> -->
+      <a href="#"><img src="img/ielop.png" style="width:80px;margin-top:-17px"alt="logo"></a> 
       </div>
 	  <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
@@ -61,13 +58,41 @@
           <div class="col-lg-5 col-sm-7">
             <div class="top_left_cont zoomIn wow animated"> 
               <h2 ><strong><font color="#4F1F42">ielop </strong><br>Inspiration and Development</font></h2>
-              <p> </p>
+              <p></p>
               <a href="#service" class="read_more2">O que fazemos?</a> </div>
+          </div>	
+		<div>
+			<div id="carousel-example-generic" class="carousel slide zoomIn wow animated" data-ride="carousel" style="width:452px;height: 256px;margin-left:628px;margin-top:61px;">
+		  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
 
-          </div>
-          <div>
-			<img src="img/mainImg.png" class="bannerImg zoomIn wow animated" alt="" />
-		  </div>
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			  <center><img src="img/android.png" style="width:250px;"alt="..."></center>
+			      <div class="carousel-caption">
+			      </div>
+			    </div>
+			    <div class="item">
+			   <center>   <img src="img/ios.png" style="width:250px;" alt="..."></center>
+			      <div class="carousel-caption">
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			  </a>
+		</div>
+			<img src="img/tablet.png"  style="margin-right:70px;width:460px;height:330px;margin-bottom:20px"class="bannerImg zoomIn wow animated" alt="" />
+		</div>
+		
         </div>
       </div>
     </div>
@@ -426,6 +451,8 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/wow.js"></script> 
+<script type="text/javascript" src="js/.js"></script>
+
  <script src="contact/jqBootstrapValidation.js"></script>
  <script src="contact/contact_me.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
