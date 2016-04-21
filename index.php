@@ -73,7 +73,7 @@
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			  <center><img src="img/android.png" style="width:250px;"alt="..."></center>
+			  	<center><img src="img/android.png" style="width:170px;"alt="..."></center>
 			      <div class="carousel-caption">
 			      </div>
 			    </div>
@@ -82,6 +82,16 @@
 			      <div class="carousel-caption">
 			      </div>
 			    </div>
+				<div class="item">
+                                <center><img src="img/webservice.png" style="width:250px;"alt="..."></center>
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+					<div class="item">
+                                <center><img src="img/html5.png" style="width:250px;"alt="..."></center>
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
 			  </div>
 
 			  <!-- Controls -->
