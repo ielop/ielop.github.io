@@ -1,0 +1,55 @@
+/*
+green CBE86B;
+purple 4F1F42;
+*/
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+body{
+	background-color: #4F1F42;
+}
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 10% 20%;
+	position: absolute;
+	background-image: url(../img/logo-transp.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+/*
+.container img{
+	width: 100%;
+}*/
+.container h1{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 3vw;
+	color: #CBE86B;
+	font-style: italic;
+	margin-top:-14%;
+	left: 11%;
+	position: relative;
+}
+.rain-container .light{
+	background-color:#CBE86B;
+	width: 44px;
+    height: 15px;
+    border-radius: 7px;
+}
+
+.rain-container .light.first{
+	position: absolute;
+	}
+.info{
+	width:300px;
+	font-family: 'PT Sans', sans-serif;
+	/*font-size: 1vw;*/
+	color: white;
+	text-align: center;
+	bottom: 5%;
+	position: absolute;
+	left: 0;
+}
+.info p{
+	color:#CBE86B;
+	margin-top: 5px;
+}

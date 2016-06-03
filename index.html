@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>ielop </title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+	<script src="js/respond-1.1.0.min.js"></script>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/html5element.js"></script>
+<![endif]-->
+ 
+</head>
+<body>
+	<div class="container">	
+<!-- 		<div class="rain-container">
+			<em class="light first"></em>
+		</div>	
+		<img src="img/logo-transp.png">
+		<h1>Inspiration & Development</h1 -->
+	</div>
+	<div class="info">
+		<address>
+			Rua V9, Qd 11, Nº 14 - Parque Shalom
+			<br>
+			CEP 65073-111  São Luís-MA
+		</address>
+		<p>Fone: +55 98 98441-6667</p>
+		<p>admin@ielop.com</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script>
+		function centralizeFooter() {
+			var width = $(window).innerWidth();
+			$('.info').css('margin-left',((width-300)/2)+'px');
+		}
+
+		centralizeFooter();
+		$(window).resize(centralizeFooter);
+	</script>
+</body>
+</html>
