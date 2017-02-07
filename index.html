@@ -15,31 +15,23 @@
  
 </head>
 <body>
-	<div class="container">	
-<!-- 		<div class="rain-container">
-			<em class="light first"></em>
-		</div>	
-		<img src="img/logo-transp.png">
-		<h1>Inspiration & Development</h1 -->
-	</div>
-	<div class="info">
-		<address>
-			Rua V9, Qd 11, Nº 14 - Parque Shalom
-			<br>
-			CEP 65073-111  São Luís-MA
-		</address>
-		<p>Fone: +55 98 98441-6667</p>
-		<p>admin@ielop.com</p>
+	<canvas id="background" width="100%"></canvas>
+	<div class="container">
+		<img class="logo" src="img/logo.png" >
+		<div class="info">
+			<address>
+				Rua V9, Qd 11, Nº 14 - Parque Shalom
+				<br>
+				CEP 65073-111  São Luís-MA
+			</address>
+			<p>Fone: +55 98 98441-6667</p>
+			<p>admin@ielop.com</p>
+		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script>
-		function centralizeFooter() {
-			var width = $(window).innerWidth();
-			$('.info').css('margin-left',((width-300)/2)+'px');
-		}
-
-		centralizeFooter();
-		$(window).resize(centralizeFooter);
+	
 	</script>
+	<script src="js/canvas.js"></script>
 </body>
 </html>
