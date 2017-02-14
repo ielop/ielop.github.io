@@ -23,18 +23,21 @@ function makeCircles() {
         circle = {};
         // Start render outside vision canvas
         if(newY>0){
-            newY = newY+2*dimensions[0]*random;
+            newY = newY-dimensions[0]*random;
         }
         else {
-            newY = newY-2*dimensions[0]*random;
+            newY = newY+dimensions[0]*random;
         }
 
         if(newX>0){
-            newX = newX+2*dimensions[0]*random;
+            newX = newX-dimensions[0]*random;
         }
         else {
-            newX = newX-2*dimensions[0]*random;
+            newX = newX+dimensions[0]*random;
         }
+
+        console.log("X:"+newX);
+        console.log("Y:"+newY);
         for (var i = 0; i < 3; i++) {
             circle[i] ={
                 posX: newX,
@@ -67,11 +70,11 @@ function makeCircles() {
             // Invert moviment
             for (var j = 0; j < 3; j++) {
                 var c = circles[i][j];
-                if(c.posY>c.radious*2) c.posY -= speed;
-                else c.posY -= speed;
+                if(c.posY>=-c.radious) c.posY -= speed;
+                else c.posY += speed;
 
-                if(c.posX>c.radious*2) c.posX -= speed;
-                else c.posX -= speed;
+                if(c.posX>=-c.radious) c.posX -= speed;
+                else c.posX += speed;
             }
         }
         setTimeout(animationLoop, 33);
