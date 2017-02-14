@@ -3,9 +3,10 @@ var context = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// Circle colors allowed
 var circleColors = new Array();
-circleColors[0]="#4F1F42";
-circleColors[1]="#fff";
+circleColors[0]="#fff";
+circleColors[1]="#4F1F42";
 circleColors[2]="#CBE86B";
 
 var dimensions = [40,14,6];
