@@ -2,7 +2,8 @@
 green CBE86B;
 purple 4F1F42;
 */
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Open+Sans:300');
+
 @font-face{
 	font-family: 'Bulo Light';
 	src:url(bulo-light.woff);
@@ -11,6 +12,16 @@ purple 4F1F42;
 body{
 	background-color: #ffffff;
 }
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	color: #CBE86B;
+	font-size: 2.3vw;
+	top:27vw;
+	left:30.7%;
+	position: absolute;
+}
+
 #background{
 	position: fixed;
 	background-color: #4F1F42;
