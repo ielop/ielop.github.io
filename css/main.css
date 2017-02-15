@@ -29,13 +29,28 @@ h2{
 	top: 0;
 	left:0;
 }
-/*.container{
-	width: 50%;
-	padding: 20px;
-	margin: 10% 25%;
-	position: relative;
-	border-radius: 10px;
-}*/
+.logo-background{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	/* IE10+ */ 
+	background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(79,31,66,1)), color-stop(100, rgba(255,255,255,0)));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+
+	/* W3C Markup */ 
+	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+}
 .logo{
 	display: block;
 	position: absolute;
@@ -45,11 +60,9 @@ h2{
 
 .info{
 	position: absolute;
-	/*width:20%;*/
 	width:100%;
-	/*margin: 0 40%;*/
-	font-family: 'Bulo Light', sans-serif;
-	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 	color: #CBE86B;
 	text-align: left;
 	line-height: 23px;
