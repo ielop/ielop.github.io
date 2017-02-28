@@ -15,30 +15,30 @@ var circles = [];
 
 function makeCircles() {
 
-    function defineCircle(){
+    function defineCircle(number){
         var circle,
         newX = Math.random()>0.5?window.innerWidth:0,
         newY = Math.random()>0.5?window.innerHeight:0,
+        biggestRadious = dimensions[0]*number,
         dX,dY,
-        random = Math.random()*4;
         circle = {};
         // Start render outside vision canvas
 
         if(newY>0){
-            newY = newY-dimensions[0]*random;
+            newY = newY-biggestRadious;
             dY="up";
         }
         else {
-            newY = newY+dimensions[0]*random;
+            newY = newY+biggestRadious;
             dY="down";
         }
 
         if(newX>0){
-            newX = newX-dimensions[0]*random;
+            newX = newX-biggestRadious;
             dX="left";
         }
         else {
-            newX = newX+dimensions[0]*random;
+            newX = newX+biggestRadious;
             dX="right";
         }
 
@@ -49,7 +49,7 @@ function makeCircles() {
                 directionX:dX,
                 directionY:dY,
                 color: circleColors[i],
-                radious:dimensions[i]*random
+                radious:dimensions[i]*number
             };
         };
 
@@ -70,7 +70,7 @@ function makeCircles() {
 
     function animationLoop() {
         var c;
-        canvas.width = canvas.width;
+        context.clearRect(0, 0, canvas.width, canvas.height);
         speed = 1;
         renderContent();
         for (var i = 0; i < circles.length; i++) {
@@ -127,7 +127,7 @@ function makeCircles() {
     } //end function animationLoop
 
     for (var i = 0; i < 4; i++) {
-        defineCircle();
+        defineCircle(i+0.5);
     }
 
     animationLoop();
