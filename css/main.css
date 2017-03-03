@@ -1,6 +1,6 @@
 /*
-green CBE86B;
-purple 4F1F42;
+green #CADC70
+purple #4F1F42
 */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Open+Sans:300');
 
@@ -15,7 +15,7 @@ body{
 
 h2{
 	font-family: 'Open Sans', sans-serif;
-	color: #CBE86B;
+	color: #CADC70;
 	font-size: 2.3vw;
 	top:16.5vw;
 	left:30.7%;
@@ -28,11 +28,23 @@ h2{
 	z-index: -10;
 	top: 0;
 	left:0;
+	-webkit-transition: background-color 1.5s; /* Safari */
+    transition: background-color 1.5s;
 }
+
+body.inspiration #background{
+	background-color: #CADC70;
+}
+body.development #background{
+	background-color: #ffffff;
+}
+
 .home{
 	width: 100%;
-	/*height:100%;*/
 	position: absolute;
+	opacity: 1;
+	-webkit-transition: opacity 0.8s; /* Safari */
+    transition: opacity 0.8s;
 	/* IE10+ */ 
 	background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
 
@@ -51,6 +63,15 @@ h2{
 	/* W3C Markup */ 
 	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
 }
+
+body.inspiration .home{
+	opacity: 0;
+}
+
+body.development .home{
+	opacity: 0;
+}
+
 .logo{
 	display: block;
 	position: absolute;
@@ -64,14 +85,14 @@ h2{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	font-size: 14px;
-	color: #CBE86B;
+	color: #CADC70;
 	text-align: left;
 	line-height: 23px;
 	bottom: 30px;
 	text-align: center;
 }
 .info p{
-	/*color:#CBE86B;*/
+	/*color:#CADC70;*/
 }
 .info img{
 	margin-bottom: -5px;
@@ -91,7 +112,7 @@ h2{
 	margin-bottom: 20px;
 }
 .menu .menu-item .menu-title{
-	color: #CBE86B;
+	color: #CADC70;
 	float: left;
 	width: 105px;
 	font-family: 'Open Sans', sans-serif;
@@ -103,18 +124,32 @@ h2{
 	-webkit-transition: all 0.5s; /* Safari */
     transition: all 0.5s;
 }
-.link{
+
+body.inspiration .menu-item .menu-title,
+body.development .menu-item .menu-title{
+	color: #4F1F42;
+}
+
+.menu-link{
 	display: block;
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
 	border: 10px solid white;
 	float: right;
+	-webkit-transition: border 0.5s; /* Safari */
+    transition: border 0.5s;
 }
-.link span{
+body.inspiration .menu-link{
+	border: 10px solid #fff;
+}
+body.development .menu-link{
+	border: 10px solid #4F1F42;
+}
+.menu-link span{
 	height: 7px;
 	width: 7px;
-	background-color: #CBE86B;
+	background-color: #CADC70;
 	border-radius: 50%;
 	display: block;
 	position: relative;
@@ -124,6 +159,12 @@ h2{
     transition: all 0.5s;
 }
 
-.link:hover span{
+body.inspiration .menu-link span{
+	background-color: #4F1F42;
+}
+body.development .menu-link span{
+	background-color: #CADC70;
+}
+.menu-link:hover span{
 	transform: scale(4);
 }

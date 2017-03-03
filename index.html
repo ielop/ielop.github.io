@@ -15,36 +15,14 @@
  
 </head>
 <body>
-	<script>
-		function logoLoad(){
-			var windowHeight = ('innerHeight' in window)?window.innerHeight:document.documentElement.clientHeight,
-			windowWidth = ('innerWidth' in window)?window.innerWidth:document.documentElement.clientWidth,
-			imgWidth = 580, imgHeight=293, ar = 580/293;// image size
-			newWidth=windowWidth*0.395, newHeight=newWidth/ar;
-			elLogo = document.getElementsByClassName('home')[0],
-			elMenu = document.getElementsByClassName('menu')[0],
-			elSubtitle = document.getElementsByClassName('subtitle')[0];
-
-			elLogo.style.marginTop = ((windowHeight-newHeight)/2) +'px';
-			elLogo.style.height = newHeight +'px';
-			elMenu.style.top = ((windowHeight-180)/2)+'px';
-		}
-
-		function showMenuTitle(event){
-			var sibling = event.target.previousSibling;
-			if( sibling ) sibling.style.opacity=1;
-		}
-		function hideMenuTitle(event){
-			var sibling = event.target.previousSibling;
-			if( sibling ) sibling.style.opacity=0;
-		}
-
-	</script>
 	<canvas id="background" width="100%"></canvas>
-	<div class="home">
-		<img class="logo" src="img/logo-transparent-2.png" onload="logoLoad();">
+	<section class="home">
+		<img class="logo" src="img/logo-transparent-2.png">
 		<h2 class="subtitle">Inspiration & Development</h2>
-	</div>
+	</section>
+	<section>
+		
+	</section>
 	<!-- <div class="info">
 		<address>
 			<img src="img/icon_address.png" width="20px;"> Rua V9, Qd 11, Nº 14 - Parque Shalom, <br> São Luís-MA CEP 65073-111 Brazil
@@ -54,16 +32,17 @@
 	</div> -->
 	<div class="menu">
 		<div class="menu-item">
-			<span class="menu-title">Inspiration</span><a onmouseleave="hideMenuTitle(event)" onmouseover="showMenuTitle(event);" class="link" href="#" title="Inspiration"><span></span></a>
+			<span class="menu-title">Inspiration</span><a class="menu-link" href="#" title="Inspiration"><span></span></a>
 		</div>
 		<div class="menu-item">
-			<span class="menu-title">Development</span><a onmouseleave="hideMenuTitle(event)" onmouseover="showMenuTitle(event);" class="link" href="#" title="Development"><span></span></a>
+			<span class="menu-title">Development</span><a class="menu-link" href="#" title="Development"><span></span></a>
 		</div>
 		<div class="menu-item">
-			<span class="menu-title">Staff</span><a onmouseleave="hideMenuTitle(event)" onmouseover="showMenuTitle(event);" class="link" href="#" title="Staff"><span></span></a>
+			<span class="menu-title">Staff</span><a class="menu-link" href="#" title="Staff"><span></span></a>
 		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> -->
 	<script src="js/canvas.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
