@@ -15,6 +15,16 @@
  
 </head>
 <body>
+	<script>
+		function logoLoad(){
+			var windowHeight = ('innerHeight' in window)?window.innerHeight:document.documentElement.clientHeight,
+			elLogo = document.getElementsByClassName('logo')[0],
+			elSubtitle = document.getElementsByClassName('subtitle')[0];
+			elLogo.style.marginTop = ((windowHeight-elLogo.height)/2) +'px';
+			elSubtitle.style.top = (((windowHeight-elLogo.height)/2)+elLogo.height*0.86) +'px';
+		}
+		// console.log(el.height);
+	</script>
 	<canvas id="background" width="100%"></canvas>
 	<div class="logo-background">
 		<img class="logo" src="img/logo-transparent-2.png" >
@@ -22,20 +32,12 @@
 	<h2 class="subtitle">Inspiration & Development</h2>
 	<div class="info">
 		<address>
-			<img src="img/icon_address.png" width="20px;"> Rua V9, Qd 11, Nº 14 - Parque Shalom, <br> São Luís-MA CEP 65073-111 Brazil
+			<img src="img/icon_address.png" width="20px;" onload="logoLoad();"> Rua V9, Qd 11, Nº 14 - Parque Shalom, <br> São Luís-MA CEP 65073-111 Brazil
 		</address>
 		<p><img src="img/icon_phone.png" width="20px;"> +55 98 98441-6667</p>
 		<p><img src="img/icon_mail.png" width="20px;"> admin@ielop.com</p>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script src="js/canvas.js"></script>
-	<script>
-		var windowHeight = ('innerHeight' in window)?window.innerHeight:document.documentElement.clientHeight,
-		elLogo = document.getElementsByClassName('logo')[0],
-		elSubtitle = document.getElementsByClassName('subtitle')[0];
-		elLogo.style.marginTop = ((windowHeight-elLogo.height)/2) +'px';
-		elSubtitle.style.top = (((windowHeight-elLogo.height)/2)+elLogo.height*0.86) +'px';
-		// console.log(el.height);
-	</script>
 </body>
 </html>
