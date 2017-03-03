@@ -39,12 +39,16 @@ body.development #background{
 	background-color: #ffffff;
 }
 
-.home{
-	width: 100%;
+section{
 	position: absolute;
-	opacity: 1;
 	-webkit-transition: opacity 0.8s; /* Safari */
     transition: opacity 0.8s;
+}
+
+#home-container{
+	width: 100%;
+	opacity: 1;
+
 	/* IE10+ */ 
 	background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
 
@@ -64,11 +68,24 @@ body.development #background{
 	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
 }
 
-body.inspiration .home{
+#inspiration-container{
+	opacity: 0;
+	background-color: white;
+	border-radius:50px;
+	width:70vw;
+	height:100vh; 
+	margin: 15vh 15vw;
+}
+
+body.inspiration #inspiration-container{
+	opacity: 1;
+}
+
+body.inspiration #home-container{
 	opacity: 0;
 }
 
-body.development .home{
+body.development #home-container{
 	opacity: 0;
 }
 

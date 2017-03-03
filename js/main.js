@@ -26,7 +26,7 @@
 		imgWidth = 580, imgHeight=293, ar = 580/293,// image size
 		newWidth=windowWidth*0.395, newHeight=newWidth/ar;
 
-		var elHome = document.getElementsByClassName('home')[0],
+		var elHome = document.getElementById('home-container'),
 		elMenu = document.getElementsByClassName('menu')[0],
 		elSubtitle = document.getElementsByClassName('subtitle')[0];
 

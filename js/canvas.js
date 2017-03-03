@@ -2,7 +2,7 @@ function makeCircles() {
 
     var canvas = document.getElementById('background'),
     circleColors = {'default':null,'inspiration':null,'development':null}, colorTransition=null,
-    renderTheme = 'default', changeColor=false, indexChange = -1, bodyClass="default",
+    renderTheme = 'default', changeColor=false, indexChange = -1, 
     menuLinks = document.getElementsByClassName('menu-link'), currentTransition = null,
     dimensions = [40,14,6], circles = [],
     context = canvas.getContext("2d");
@@ -162,24 +162,20 @@ function makeCircles() {
     // Transition to other color
     function activateRender(event){
         event.preventDefault();
-        renderTheme = event.target.parentNode.title.toLowerCase();
-
-        if(renderTheme!='inspiration' && renderTheme!='development') {
-            renderTheme='default';
-            bodyClass='default';
+        var newTheme = event.target.parentNode.title.toLowerCase();
+        if(newTheme!='inspiration' && newTheme!='development') {
+            newTheme='default';
         }
 
-        changeColor = true;
-
+        // console.log(renderTheme);
+        // console.log(newTheme);
+        if(renderTheme!=newTheme){
+            renderTheme=newTheme;
+            changeColor = true;
+        }
     }
 
-    for (var i = 0; i < 4; i++) {
-        defineCircle(i+0.5);
-    }
-
-    animationLoop();
-
-    //Attach event to change color canvas
+        //Attach event to change color canvas
     if (document.addEventListener) {
         for (var i = 0; i < menuLinks.length; i++) {
             menuLinks[i].addEventListener('click', activateRender, false);
@@ -189,6 +185,15 @@ function makeCircles() {
             menuLinks[i].attachEvent('onclick', activateRender);
         }
     }
+
+    // Start Animation
+    for (var i = 0; i < 4; i++) {
+        defineCircle(i+0.5);
+    }
+
+    animationLoop();
+
+
 } //end function makeCircles
 
 // Canvas 
