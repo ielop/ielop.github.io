@@ -30,10 +30,10 @@ h2,h3{
     transition: background-color 1.5s;
 }
 
-body.inspiration #background{
+body.ielop #background{
 	background-color: #CADC70;
 }
-body.development #background{
+body.clients #background{
 	background-color: #ffffff;
 }
 
@@ -68,7 +68,7 @@ section{
 	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
 }
 
-body.development #home-container{
+body.clients #home-container{
 	opacity: 0;
 }
 
@@ -111,14 +111,14 @@ body.development #home-container{
 	top: 40px;
 }
 .menu .menu-item{
-	width:150px;
+	width:220px;
 	height: 40px;
 	margin-bottom: 20px;
 }
 .menu .menu-item .menu-title{
 	color: #CADC70;
 	float: left;
-	width: 105px;
+	width: 175px;
 	font-family: 'Open Sans', sans-serif;
 	/*font-weight: bold;*/
 	font-size: 14px;
@@ -129,8 +129,8 @@ body.development #home-container{
     transition: all 0.5s;
 }
 
-body.inspiration .menu-item .menu-title,
-body.development .menu-item .menu-title{
+body.ielop .menu-item .menu-title,
+body.clients .menu-item .menu-title{
 	color: #4F1F42;
 }
 
@@ -144,10 +144,10 @@ body.development .menu-item .menu-title{
 	-webkit-transition: border 0.5s; /* Safari */
     transition: border 0.5s;
 }
-body.inspiration .menu-link{
+body.ielop .menu-link{
 	border: 10px solid #fff;
 }
-body.development .menu-link{
+body.clients .menu-link{
 	border: 10px solid #4F1F42;
 }
 .menu-link span{
@@ -163,37 +163,93 @@ body.development .menu-link{
     transition: all 0.5s;
 }
 
-body.inspiration .menu-link span{
+body.ielop .menu-link span{
 	background-color: #4F1F42;
 }
-body.development .menu-link span{
+body.clients .menu-link span{
 	background-color: #CADC70;
 }
-.menu-link:hover span{
+.menu-item:hover a span,
+.menu-item.active a span{
 	transform: scale(4);
+}
+.menu-item:hover .menu-title,
+.menu-item.active .menu-title{
+	opacity:1;
 }
 
 /* Inspiration*/
-
-#inspiration-container{
+#ielop-container{
 	opacity: 0;
-	background-color: white;
-	border-radius:50px;
+	/*background-color: white;*/
+	/*border-radius:50px;*/
 	width:70vw;
-	height:100vh; 
+/*	height:100vh; */
 	margin: 15vh 15vw;
 }
 
-body.inspiration #inspiration-container{
+body.ielop #ielop-container{
 	opacity: 1;
+	position: absolute;
 }
 
-body.inspiration #home-container{
+body.ielop #home-container{
 	opacity: 0;
 }
 
-#inspiration-container h2{
-	top: -10vh;
+#ielop-container h2{
+	top: -80px;
 	color:#4F1F42;
 	font-size: 50px;
+}
+
+#ielop-container .portfolio{
+	position: relative;
+	border-radius: 20px;
+	background-color: white;
+	width: 20vw;
+	height: 20vw;
+	float:left;
+	margin: 0 0 1.6vw 0;
+}
+/*ieptbma*/
+#ielop-container .portfolio.ieptbma{
+	background-image: url("../img/ieptbma-bg.png");
+	background-size: 100% 100%;
+	margin-right: 0;
+}
+#ielop-container .portfolio.ieptbma img{
+	transform: scale(0.9);
+	width:70%;
+	margin: 28% 14%;
+	-webkit-transition: transform 1s; /* Safari */
+    transition: transform 1s;
+}
+#ielop-container .portfolio.ieptbma:hover{
+	margin-right: 0;
+}
+#ielop-container .portfolio.ieptbma:hover img{
+	transform: scale(1);
+}
+
+/*tedxruaportugal*/
+#ielop-container .portfolio.tedx{
+	width: 43.3vw;
+	margin-left: 1.6vw;
+}
+#ielop-container .portfolio.tedx img{
+	width: 80%;
+	margin: 17% 10%;
+}
+#ielop-container .portfolio.tedx img.logo-2{
+	display: none;
+}
+#ielop-container .portfolio.tedx:hover{
+	background-color: black;
+}
+#ielop-container .portfolio.tedx:hover img.logo-1{
+	display: none;
+}
+#ielop-container .portfolio.tedx:hover img.logo-2{
+	display: block;
 }

@@ -46,13 +46,20 @@
 	}
 	function changeBgColor(event) {
 		event.preventDefault();
-		document.body.className = event.target.parentNode.title.toLowerCase();
+		var clicked = event.target.tagName!="SPAN"?event.target:event.target.parentNode,
+		menuItem = clicked.parentNode,
+		menuActive = document.querySelector('.menu-item.active');
+
+		// Check if is the same object/element
+		if( menuActive!=clicked ){
+			if(menuActive) menuActive.className = menuActive.className.replace('active','');
+			document.body.className = menuItem.getAttribute('alt');
+			menuItem.className = menuItem.className+" active";
+		}
 	}
 
 	// Add eventlistener to the menu links
 	for (var i = 0; i < menuLinks.length; i++) {
-		addEvent(menuLinks[i],'mouseover',showMenuTitle);
-		addEvent(menuLinks[i],'mouseleave',hideMenuTitle);
 		addEvent(menuLinks[i],'click',changeBgColor);
 	}
 

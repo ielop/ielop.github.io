@@ -1,7 +1,7 @@
 function makeCircles() {
 
     var canvas = document.getElementById('background'),
-    circleColors = {'default':null,'inspiration':null,'development':null}, colorTransition=null,
+    circleColors = {'default':null,'ielop':null,'clients':null}, colorTransition=null,
     renderTheme = 'default', changeColor=false, indexChange = -1, 
     menuLinks = document.getElementsByClassName('menu-link'), currentTransition = null,
     dimensions = [40,14,6], circles = [],
@@ -17,8 +17,8 @@ function makeCircles() {
 
     // Circle colors allowed
     circleColors['default']=["#fff","#4F1F42","#CADC70"];
-    circleColors['inspiration']=["#fff","#CADC70","#4F1F42"];
-    circleColors['development']=["#4F1F42","#fff","#CADC70"];
+    circleColors['ielop']=["#fff","#CADC70","#4F1F42"];
+    circleColors['clients']=["#4F1F42","#fff","#CADC70"];
 
     colorTransition = {
         // White to purple
@@ -159,19 +159,20 @@ function makeCircles() {
         setTimeout(animationLoop, 33);
     } //end function animationLoop
 
-    // Transition to other color
+    // Flag to do transition to other color
     function activateRender(event){
         event.preventDefault();
-        var newTheme = event.target.parentNode.title.toLowerCase();
-        if(newTheme!='inspiration' && newTheme!='development') {
+        var target = event.target.tagName!="SPAN"?event.target:event.target.parentNode,
+        newTheme = target.parentNode.getAttribute('alt');
+        if(newTheme!='ielop' && newTheme!='clients') {
             newTheme='default';
         }
 
-        // console.log(renderTheme);
-        // console.log(newTheme);
+        // Change theme only if is different
         if(renderTheme!=newTheme){
             renderTheme=newTheme;
             changeColor = true;
+            console.log(renderTheme);
         }
     }
 
