@@ -253,3 +253,16 @@ body.ielop #home-container{
 #ielop-container .portfolio.tedx:hover img.logo-2{
 	display: block;
 }
+
+#ielop-container .portfolio.cacatua{
+	overflow: hidden;
+	position: relative;
+	width: 43.3vw;
+	margin-right: 1.6vw;
+}
+#ielop-container .portfolio.cacatua img.logo-bg{
+
+}
+#ielop-container .portfolio.cacatua img.logo{
+	margin: 5% 0 0 12%;
+}
