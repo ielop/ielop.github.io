@@ -8,8 +8,13 @@ function makeCircles() {
     context = canvas.getContext("2d");
 
     // get user displaysize
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = ('innerWidth' in window)?window.innerWidth:document.documentElement.clientWidth;
+    canvas.height = ('innerHeight' in window)?window.innerHeight:document.documentElement.clientHeight;
+
+    // document.onresize = function() {
+    //     canvas.width = window.innerWidth;
+    //     canvas.height = window.innerHeight;
+    // }
 
     /**
      * Color Definitions

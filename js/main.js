@@ -65,5 +65,7 @@
 
 	// Add load listener to centralize the logo
 	logoLoad();
+	// addEvent(document,'resize',logoLoad);
+
 
 })();

@@ -435,9 +435,7 @@ body.team #team-container{
     top: 0.61vh;
     left: 0.61vw;
 }
-#team-container .staff:hover{
 
-}
 #team-container .staff img{
 	position: absolute;
 	border-radius: 50%;
