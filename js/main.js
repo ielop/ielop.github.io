@@ -4,20 +4,10 @@
 	// Define vaiables to be used in this function
 	var menuLinks = document.getElementsByClassName('menu-link'),
 	// elBg = document.getElementById('background'),
-	elLogo = document.getElementsByClassName('logo')[0],
-	eventListenerName = 'addEventListener',
-	prefixNameListener='';
+	elLogo = document.getElementsByClassName('logo')[0];
 
-	// Detect eventListener
-	if( !document.addEventListener ){
-		eventListenerName = 'attachEvent',
-		prefixNameListener='on';
-	}
-	// Generic add event listener
-	function addEvent( el, eventName, eventfunction )
-	{
-		el[eventListenerName](prefixNameListener+eventName, eventfunction);
-	}
+	// user browser language
+	var userLang = navigator.language || navigator.userLanguage; 
 
 	// centralize logo when the image is fully loaded
 	function logoLoad(){
@@ -59,8 +49,17 @@
 	}
 
 	// Add eventlistener to the menu links
-	for (var i = 0; i < menuLinks.length; i++) {
-		addEvent(menuLinks[i],'click',changeBgColor);
+	//Attach event to change color canvas
+	if (document.addEventListener) {
+	    for (var i = 0; i < menuLinks.length; i++) {
+	        menuLinks[i].addEventListener('click', changeBgColor, false);
+	        window.addEventListener('resize',logoLoad,false);
+	    }
+	} else if (document.attachEvent)  {
+	    for (var i = 0; i < menuLinks.length; i++) {
+	        menuLinks[i].attachEvent('onclick', changeBgColor);
+	        window.addEventListener('onresize',logoLoad);
+	    }
 	}
 
 	// Add load listener to centralize the logo

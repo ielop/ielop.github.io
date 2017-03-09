@@ -11,10 +11,10 @@ function makeCircles() {
     canvas.width = ('innerWidth' in window)?window.innerWidth:document.documentElement.clientWidth;
     canvas.height = ('innerHeight' in window)?window.innerHeight:document.documentElement.clientHeight;
 
-    // document.onresize = function() {
-    //     canvas.width = window.innerWidth;
-    //     canvas.height = window.innerHeight;
-    // }
+    function newWindowSize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
 
     /**
      * Color Definitions
@@ -192,14 +192,16 @@ function makeCircles() {
         // }
     }
 
-        //Attach event to change color canvas
+    //Attach event to change color canvas
     if (document.addEventListener) {
         for (var i = 0; i < menuLinks.length; i++) {
             menuLinks[i].addEventListener('click', activateRender, false);
+            window.addEventListener('resize',newWindowSize,false);
         }
     } else if (document.attachEvent)  {
         for (var i = 0; i < menuLinks.length; i++) {
             menuLinks[i].attachEvent('onclick', activateRender);
+            window.addEventListener('onresize',newWindowSize);
         }
     }
 
@@ -209,7 +211,6 @@ function makeCircles() {
     }
 
     animationLoop();
-
 
 } //end function makeCircles
 
