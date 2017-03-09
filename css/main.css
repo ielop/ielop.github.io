@@ -11,6 +11,10 @@ purple #4F1F42
 
 body{
 	background-color: #ffffff;
+	overflow: hidden;
+}
+body.ielop{
+	overflow: visible;
 }
 
 h2,h3{
@@ -121,7 +125,7 @@ body.clients #home-container{
 	width: 175px;
 	font-family: 'Open Sans', sans-serif;
 	/*font-weight: bold;*/
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 36px;
 	text-align: right;
 	opacity: 0;
@@ -179,6 +183,15 @@ body.clients .menu-link span{
 }
 
 /* Inspiration*/
+body.ielop #ielop-container{
+	opacity: 1;
+	position: absolute;
+	z-index: 1000;
+}
+body.ielop #home-container{
+	opacity: 0;
+}
+
 #ielop-container{
 	opacity: 0;
 	/*background-color: white;*/
@@ -186,21 +199,14 @@ body.clients .menu-link span{
 	width:70vw;
 /*	height:100vh; */
 	margin: 15vh 15vw;
+	z-index: -1000;
 }
 
-body.ielop #ielop-container{
-	opacity: 1;
-	position: absolute;
-}
-
-body.ielop #home-container{
-	opacity: 0;
-}
 
 #ielop-container h2{
-	top: -80px;
+	top: -6%;
 	color:#4F1F42;
-	font-size: 50px;
+	font-size: 3vw;
 }
 
 #ielop-container .portfolio{
@@ -253,7 +259,6 @@ body.ielop #home-container{
 #ielop-container .portfolio.tedx:hover img.logo-2{
 	display: block;
 }
-
 #ielop-container .portfolio.cacatua{
 	overflow: hidden;
 	position: relative;
@@ -261,8 +266,55 @@ body.ielop #home-container{
 	margin-right: 1.6vw;
 }
 #ielop-container .portfolio.cacatua img.logo-bg{
-
+	position: absolute;
+	top: -70%;
+}
+#ielop-container .portfolio.cacatua:hover img.logo-bg{
+	position: absolute;
+	/*top: -60%;*/
 }
 #ielop-container .portfolio.cacatua img.logo{
+	position: absolute;
 	margin: 5% 0 0 12%;
+}
+#ielop-container .portfolio.ifind {
+	background-image: url('../img/ifind-bg.jpg');
+}
+#ielop-container .portfolio.ifind img{
+	margin:10% 21%;
+	-webkit-transition: transform 1s; /* Safari */
+    transition: transform 1s;
+}
+#ielop-container .portfolio.ifind:hover img{
+	transform: rotateY(360deg);
+}
+#ielop-container .portfolio.direcize img{
+	margin: 40% 10%;
+}
+/*Clients*/
+body.clients #home-container{
+	opacity: 0;
+}
+body.clients #clients-container{
+	opacity: 1;
+	position: absolute;
+	z-index: 1000;
+}
+#clients-container{
+
+}
+
+/*team container*/
+body.team #home-container{
+	opacity: 0;
+}
+
+#team-container{}
+
+#team-container .staff{
+	position: absolute;
+	border-radius: 50%;
+	width: 20%;
+	height: 20%;
+	background-color: white;
 }

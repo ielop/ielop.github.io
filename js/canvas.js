@@ -4,7 +4,7 @@ function makeCircles() {
     circleColors = {'default':null,'ielop':null,'clients':null}, colorTransition=null,
     renderTheme = 'default', changeColor=false, indexChange = -1, 
     menuLinks = document.getElementsByClassName('menu-link'), currentTransition = null,
-    dimensions = [40,14,6], circles = [],
+    dimensions = [40,14,6], circles = [], paused = false;
     context = canvas.getContext("2d");
 
     // get user displaysize
@@ -107,55 +107,58 @@ function makeCircles() {
 
     // The animation
     function animationLoop() {
-        var c;
-        context.clearRect(0, 0, canvas.width, canvas.height);
-        speed = 1;
-        renderColorTransition();
-        renderContent();
-        for (var i = 0; i < circles.length; i++) {
-            // Invert moviment
-            for (var j = 0; j < 3; j++) {
-                c = circles[i][j];
+        var c, speed = 1;
 
-                if( c.directionY=="up" ){
-                    c.posY -= speed;
+        if( !paused){
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            renderColorTransition();
+            renderContent();
+            for (var i = 0; i < circles.length; i++) {
+                // Invert moviment
+                for (var j = 0; j < 3; j++) {
+                    c = circles[i][j];
+
+                    if( c.directionY=="up" ){
+                        c.posY -= speed;
+                    }
+                    else{
+                        c.posY += speed;
+                    }
+
+                    if( c.directionX=="left" ){
+                        c.posX -= speed;
+                    }
+                    else{
+                        c.posX += speed;
+                    }
                 }
-                else{
-                    c.posY += speed;
+                c=circles[i][0];
+
+                if(c.posY<=c.radious && c.directionY=="up") {
+                    circles[i][0].directionY="down";
+                    circles[i][1].directionY="down";
+                    circles[i][2].directionY="down";
+                }
+                else if( c.posY>=(window.innerHeight-c.radious) && c.directionY=="down" ) {
+                    circles[i][0].directionY="up";
+                    circles[i][1].directionY="up";
+                    circles[i][2].directionY="up";
                 }
 
-                if( c.directionX=="left" ){
-                    c.posX -= speed;
+                if(c.posX<=c.radious && c.directionX=="left") {
+                    circles[i][0].directionX="right";
+                    circles[i][1].directionX="right";
+                    circles[i][2].directionX="right";
                 }
-                else{
-                    c.posX += speed;
+                else if( c.posX>=(window.innerWidth-c.radious) && c.directionX=="right" ) {
+                    circles[i][0].directionX="left";
+                    circles[i][1].directionX="left";
+                    circles[i][2].directionX="left";
                 }
-            }
-            c=circles[i][0];
 
-            if(c.posY<=c.radious && c.directionY=="up") {
-                circles[i][0].directionY="down";
-                circles[i][1].directionY="down";
-                circles[i][2].directionY="down";
             }
-            else if( c.posY>=(window.innerHeight-c.radious) && c.directionY=="down" ) {
-                circles[i][0].directionY="up";
-                circles[i][1].directionY="up";
-                circles[i][2].directionY="up";
-            }
-
-            if(c.posX<=c.radious && c.directionX=="left") {
-                circles[i][0].directionX="right";
-                circles[i][1].directionX="right";
-                circles[i][2].directionX="right";
-            }
-            else if( c.posX>=(window.innerWidth-c.radious) && c.directionX=="right" ) {
-                circles[i][0].directionX="left";
-                circles[i][1].directionX="left";
-                circles[i][2].directionX="left";
-            }
-
         }
+
         setTimeout(animationLoop, 33);
     } //end function animationLoop
 
@@ -164,15 +167,22 @@ function makeCircles() {
         event.preventDefault();
         var target = event.target.tagName!="SPAN"?event.target:event.target.parentNode,
         newTheme = target.parentNode.getAttribute('alt');
-        if(newTheme!='ielop' && newTheme!='clients') {
+        if(newTheme!='ielop' && newTheme!='team') {
             newTheme='default';
+        }
+        console.log(newTheme)
+        if(newTheme=='team') {
+            paused=true;
+        }
+        else{
+            paused=false;
         }
 
         // Change theme only if is different
         if(renderTheme!=newTheme){
             renderTheme=newTheme;
             changeColor = true;
-            console.log(renderTheme);
+            // console.log(renderTheme);
         }
     }
 
