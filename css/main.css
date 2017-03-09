@@ -206,13 +206,15 @@ body.ielop #home-container{
 	color:#4F1F42;
 	font-size: 3vw;
 }
-
+#ielop-container .portfolio-container{
+	margin-top: 3%;
+}
 #ielop-container .portfolio{
 	position: relative;
 	border-radius: 20px;
 	background-color: white;
-	width: 20vw;
-	height: 20vw;
+	width: 15vw;
+	height: 15vw;
 	float:left;
 	margin: 0 0 1.6vw 0;
 }
@@ -243,7 +245,7 @@ body.ielop #home-container{
 }
 #ielop-container .portfolio.tedx img{
 	width: 80%;
-	margin: 17% 10%;
+	margin: 12% 10%;
 }
 #ielop-container .portfolio.tedx img.logo-2{
 	display: none;
@@ -260,20 +262,29 @@ body.ielop #home-container{
 #ielop-container .portfolio.cacatua{
 	overflow: hidden;
 	position: relative;
-	width: 43.3vw;
-	margin-right: 1.6vw;
+	margin: 0 1.6vw;
+	width: 30vw;
+    background: url(../img/cacatua-bg-branco.png) 50% 58% no-repeat;
 }
-#ielop-container .portfolio.cacatua img.logo-bg{
+/*#ielop-container .portfolio.cacatua:hover{
+    background-image: url(../img/cacatua-bg-amarelo.png)
+}*/
+#ielop-container .portfolio.cacatua .logo-filter{
 	position: absolute;
-	top: -70%;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+	background-color: 	#FFFF00;
+	border-radius: 20px;
 }
-#ielop-container .portfolio.cacatua:hover img.logo-bg{
-	position: absolute;
-	/*top: -60%;*/
+#ielop-container .portfolio.cacatua:hover .logo-filter{
+	opacity: 0.6;
 }
 #ielop-container .portfolio.cacatua img.logo{
 	position: absolute;
-	margin: 5% 0 0 12%;
+	margin: 11% 0 0 24%;
 }
 #ielop-container .portfolio.ifind {
 	background-image: url('../img/ifind-bg.jpg');
@@ -363,9 +374,10 @@ body.team #team-container{
 }
 #team-container{
 	opacity: 0;
-	width:70%;
-	height: 95%;
-	margin: 5% 15% 0 15%;
+	width:100%;
+	height: 100%;
+	padding: 30% 15% 0 15%;
+	box-sizing: border-box;
 	z-index: -10;
 
 	/* IE10+ */ 
@@ -388,8 +400,8 @@ body.team #team-container{
 }
 #team-container h2{
 	position: absolute;
-	top: 55%;
-    left: 18%;
+	top: 56vh;
+    left: 18vw;
 }
 #team-container .circle{
 	position: absolute;
@@ -397,8 +409,8 @@ body.team #team-container{
 	width: 1.1vw;
 	height: 1.1vw;
 	border: 1vw solid white;
-    left: 47.3%;
-    top: 10%;
+    left: 48vw;
+    top: 26vh;
 }
 #team-container .circle span{
 	height:0.5vw;
@@ -407,48 +419,47 @@ body.team #team-container{
 	border-radius: 50%;
 	display: block;
 	position: relative;
-    top: 0.31vw;
+    top: 0.31vh;
     left: 0.31vw;
 }
 #team-container .circle.second{
-	width: 2.1vw;
-	height: 2.1vw;
-	border: 2vw solid white;
-    left: 36.1%;
-    top: 51.3%;
+    width: 2.1vw;
+    height: 2.1vw;
+    border: 2vw solid white;
+    left: 33.1vw;
+    top: 58vh;
 }
 #team-container .circle.second span{
 	height:0.9vw;
 	width:0.9vw;
-    top: 0.61vw;
+    top: 0.61vh;
     left: 0.61vw;
+}
+#team-container .staff:hover{
+
 }
 #team-container .staff img{
 	position: absolute;
 	border-radius: 50%;
-	width: 15%;
+	width: 10vw;
 }
 #team-container .staff.first img{
-	width: 30%;
-	left: 20%;
-	top: 5%;
-
-	/*height: 15%;*/
+	width: 23vw;
+	left: 25vw;
+	top: 25vh;
 }
 #team-container .staff.second img{
-	width: 15%;
-	top: 11%;
-	left: 50%;
-	/*height: 30%;*/
+	width: 12vw;
+	top: 31vh;
+	left: 50vw;
 }
 #team-container .staff.third img{
-	width: 25%;
-	top: 35%;
-	left: 44.8%;
-	/*height: 25%;*/
+    width: 20vw;
+    top: 46vh;
+    left: 42vw;
 }
 #team-container .staff.fourth img{
-	top: 21%;
-	left: 64%;
+    top: 41vh;
+    left: 60vw;
 }
 
