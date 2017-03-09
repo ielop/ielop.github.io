@@ -1,8 +1,8 @@
 function makeCircles() {
 
     var canvas = document.getElementById('background'),
-    circleColors = {'default':null,'ielop':null,'clients':null}, colorTransition=null,
-    renderTheme = 'default', changeColor=false, indexChange = -1, 
+    circleColors = {'home':null,'ielop':null,'about':null,'team':null}, colorTransition=null,
+    renderTheme = 'home', changeColor=false, indexChange = -1, 
     menuLinks = document.getElementsByClassName('menu-link'), currentTransition = null,
     dimensions = [40,14,6], circles = [], paused = false;
     context = canvas.getContext("2d");
@@ -16,21 +16,22 @@ function makeCircles() {
      ****************************/
 
     // Circle colors allowed
-    circleColors['default']=["#fff","#4F1F42","#CADC70"];
+    circleColors['home']=["#fff","#4F1F42","#CADC70"];
+    circleColors['team']=["#fff","#4F1F42","#CADC70"];
     circleColors['ielop']=["#fff","#CADC70","#4F1F42"];
-    circleColors['clients']=["#4F1F42","#fff","#CADC70"];
+    circleColors['about']=["#4F1F42","#fff","#CADC70"];
 
-    colorTransition = {
-        // White to purple
-        "#fff#4F1F42":['#F6F4F6','#EDE9EC','#E5DDE3','#DCD2D9','#D3C7D0','#CABCC6','#C1B1BD','#B9A5B3','#B09AAA',
-            '#A78FA0','#9E8497','#95798E','#8D6D84','#84627B','#7B5771','#724C68','#69415E','#613555','#582A4B'],
-        // White to green
-        "#fff#CADC70":['#FCFDF8','#FAFCF1','#F7FAEA','#F4F8E2','#F2F6DB','#EFF4D4','#ECF3CD','#EAF1C6','#E7EFBF',
-            '#E4EEB8','#E2ECB0','#DFEAA9','#DDE8A2','#DAE69B','#D7E594','#D5E38D','#D2E185','#CFE07E','#CDDE77'],
-        //purple to green
-        "#CADC70#4F1F42":['#552844','#5B3247','#613B49','#68454B','#6E4E4E','#745850','#7A6152','#806B54','#867457',
-            '#8C7E59','#93875B','#99905E','#9F9A60','#A5A362','#ABAD64','#B1B667','#B8C069','#BEC96B','#C4D36E',]
-    }
+    // colorTransition = {
+    //     // White to purple
+    //     "#fff#4F1F42":['#F6F4F6','#EDE9EC','#E5DDE3','#DCD2D9','#D3C7D0','#CABCC6','#C1B1BD','#B9A5B3','#B09AAA',
+    //         '#A78FA0','#9E8497','#95798E','#8D6D84','#84627B','#7B5771','#724C68','#69415E','#613555','#582A4B'],
+    //     // White to green
+    //     "#fff#CADC70":['#FCFDF8','#FAFCF1','#F7FAEA','#F4F8E2','#F2F6DB','#EFF4D4','#ECF3CD','#EAF1C6','#E7EFBF',
+    //         '#E4EEB8','#E2ECB0','#DFEAA9','#DDE8A2','#DAE69B','#D7E594','#D5E38D','#D2E185','#CFE07E','#CDDE77'],
+    //     //purple to green
+    //     "#CADC70#4F1F42":['#552844','#5B3247','#613B49','#68454B','#6E4E4E','#745850','#7A6152','#806B54','#867457',
+    //         '#8C7E59','#93875B','#99905E','#9F9A60','#A5A362','#ABAD64','#B1B667','#B8C069','#BEC96B','#C4D36E',]
+    // }
 
 
     /**
@@ -110,6 +111,7 @@ function makeCircles() {
         var c, speed = 1;
 
         if( !paused){
+                    // Clear canvas
             context.clearRect(0, 0, canvas.width, canvas.height);
             renderColorTransition();
             renderContent();
@@ -167,22 +169,25 @@ function makeCircles() {
         event.preventDefault();
         var target = event.target.tagName!="SPAN"?event.target:event.target.parentNode,
         newTheme = target.parentNode.getAttribute('alt');
-        if(newTheme!='ielop' && newTheme!='team') {
-            newTheme='default';
-        }
+
         console.log(newTheme)
+        console.log(renderTheme)
+        // Change theme only if is different
+        if(renderTheme!=newTheme){
+            renderTheme=newTheme;
+
+            // render new color for circles
+            renderColorTransition();
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            renderContent();
+            // console.log(renderTheme);
+        }
+
         if(newTheme=='team') {
             paused=true;
         }
         else{
             paused=false;
-        }
-
-        // Change theme only if is different
-        if(renderTheme!=newTheme){
-            renderTheme=newTheme;
-            changeColor = true;
-            // console.log(renderTheme);
         }
     }
 

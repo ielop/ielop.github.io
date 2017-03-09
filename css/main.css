@@ -37,7 +37,7 @@ h2,h3{
 body.ielop #background{
 	background-color: #CADC70;
 }
-body.clients #background{
+body.about #background{
 	background-color: #ffffff;
 }
 
@@ -72,7 +72,7 @@ section{
 	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
 }
 
-body.clients #home-container{
+body.about #home-container{
 	opacity: 0;
 }
 
@@ -134,7 +134,7 @@ body.clients #home-container{
 }
 
 body.ielop .menu-item .menu-title,
-body.clients .menu-item .menu-title{
+body.about .menu-item .menu-title{
 	color: #4F1F42;
 }
 
@@ -151,7 +151,7 @@ body.clients .menu-item .menu-title{
 body.ielop .menu-link{
 	border: 10px solid #fff;
 }
-body.clients .menu-link{
+body.about .menu-link{
 	border: 10px solid #4F1F42;
 }
 .menu-link span{
@@ -170,7 +170,7 @@ body.clients .menu-link{
 body.ielop .menu-link span{
 	background-color: #4F1F42;
 }
-body.clients .menu-link span{
+body.about .menu-link span{
 	background-color: #CADC70;
 }
 .menu-item:hover a span,
@@ -292,29 +292,97 @@ body.ielop #home-container{
 	margin: 40% 10%;
 }
 /*Clients*/
-body.clients #home-container{
+body.about #home-container{
 	opacity: 0;
 }
-body.clients #clients-container{
+body.about #about-container{
 	opacity: 1;
 	position: absolute;
 	z-index: 1000;
 }
-#clients-container{
-
+#about-container{
+	opacity: 0;
 }
 
 /*team container*/
 body.team #home-container{
 	opacity: 0;
 }
-
-#team-container{}
-
-#team-container .staff{
+body.team #team-container{
+	opacity: 1;
+	position: absolute;
+	z-index: 1000;
+}
+#team-container{
+	opacity: 0;
+	width:70%;
+	height: 95%;
+	margin: 5% 15% 0 15%;
+	z-index: -1000;
+}
+#team-container h2{
+	position: absolute;
+	top: 55%;
+    left: 18%;
+}
+#team-container .circle{
 	position: absolute;
 	border-radius: 50%;
-	width: 20%;
-	height: 20%;
-	background-color: white;
+	width: 1.1vw;
+	height: 1.1vw;
+	border: 1vw solid white;
+    left: 47.3%;
+    top: 10%;
 }
+#team-container .circle span{
+	height:0.5vw;
+	width:0.5vw;
+	background-color: #CADC70;
+	border-radius: 50%;
+	display: block;
+	position: relative;
+    top: 0.31vw;
+    left: 0.31vw;
+}
+#team-container .circle.second{
+	width: 2.1vw;
+	height: 2.1vw;
+	border: 2vw solid white;
+    left: 36.1%;
+    top: 51.3%;
+}
+#team-container .circle.second span{
+	height:0.9vw;
+	width:0.9vw;
+    top: 0.61vw;
+    left: 0.61vw;
+}
+#team-container .staff img{
+	position: absolute;
+	border-radius: 50%;
+	width: 15%;
+}
+#team-container .staff.first img{
+	width: 30%;
+	left: 20%;
+	top: 5%;
+
+	/*height: 15%;*/
+}
+#team-container .staff.second img{
+	width: 15%;
+	top: 11%;
+	left: 50%;
+	/*height: 30%;*/
+}
+#team-container .staff.third img{
+	width: 25%;
+	top: 35%;
+	left: 44.8%;
+	/*height: 25%;*/
+}
+#team-container .staff.fourth img{
+	top: 21%;
+	left: 64%;
+}
+
