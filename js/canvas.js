@@ -95,14 +95,12 @@ function makeCircles() {
 
     //Change circles color
     function renderColorTransition() {
-        if( changeColor ) {
-            for (var i = 0; i < circles.length; i++) {
-                for (var j = 0; j < 3; j++) {
-
-                    circles[i][j].color = circleColors[renderTheme][j];
-                }
+        for (var i = 0; i < circles.length; i++) {
+            for (var j = 0; j < 3; j++) {
+                // console.log(renderTheme);
+                // console.log(circleColors[renderTheme][j]);
+                circles[i][j].color = circleColors[renderTheme][j];
             }
-            changeColor = false;
         }
     }
 
@@ -111,9 +109,9 @@ function makeCircles() {
         var c, speed = 1;
 
         if( !paused){
-                    // Clear canvas
+                
+            // Clear canvas
             context.clearRect(0, 0, canvas.width, canvas.height);
-            renderColorTransition();
             renderContent();
             for (var i = 0; i < circles.length; i++) {
                 // Invert moviment
@@ -170,8 +168,6 @@ function makeCircles() {
         var target = event.target.tagName!="SPAN"?event.target:event.target.parentNode,
         newTheme = target.parentNode.getAttribute('alt');
 
-        console.log(newTheme)
-        console.log(renderTheme)
         // Change theme only if is different
         if(renderTheme!=newTheme){
             renderTheme=newTheme;
@@ -183,12 +179,12 @@ function makeCircles() {
             // console.log(renderTheme);
         }
 
-        if(newTheme=='team') {
-            paused=true;
-        }
-        else{
-            paused=false;
-        }
+        // if(newTheme=='team') {
+        //     paused=true;
+        // }
+        // else{
+        //     paused=false;
+        // }
     }
 
         //Attach event to change color canvas

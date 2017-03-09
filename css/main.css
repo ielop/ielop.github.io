@@ -48,7 +48,6 @@ section{
 }
 
 /* Home Container*/
-
 #home-container{
 	width: 100%;
 	opacity: 1;
@@ -72,10 +71,6 @@ section{
 	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
 }
 
-body.about #home-container{
-	opacity: 0;
-}
-
 #home-container .logo{
 	display: block;
 	position: absolute;
@@ -88,15 +83,17 @@ body.about #home-container{
 }
 
 .info{
-	position: absolute;
+	position: fixed;
 	width:100%;
+	bottom: 10px;
+	color: #CADC70;
+	padding:0 15px;
+	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	font-size: 14px;
-	color: #CADC70;
+	font-size: 12px;
 	text-align: left;
 	line-height: 23px;
-	bottom: 30px;
 	text-align: center;
 }
 .info p{
@@ -113,6 +110,7 @@ body.about #home-container{
 	position: absolute;
 	right: 40px;
 	top: 40px;
+	z-index: 20;
 }
 .menu .menu-item{
 	width:220px;
@@ -186,7 +184,7 @@ body.about .menu-link span{
 body.ielop #ielop-container{
 	opacity: 1;
 	position: absolute;
-	z-index: 1000;
+	z-index: 10;
 }
 body.ielop #home-container{
 	opacity: 0;
@@ -199,7 +197,7 @@ body.ielop #home-container{
 	width:70vw;
 /*	height:100vh; */
 	margin: 15vh 15vw;
-	z-index: -1000;
+	z-index: -10;
 }
 
 
@@ -291,19 +289,69 @@ body.ielop #home-container{
 #ielop-container .portfolio.direcize img{
 	margin: 40% 10%;
 }
-/*Clients*/
+/* About */
 body.about #home-container{
 	opacity: 0;
 }
 body.about #about-container{
 	opacity: 1;
-	position: absolute;
-	z-index: 1000;
 }
 #about-container{
 	opacity: 0;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height:100%;
+	box-sizing: border-box;
+	padding: 8% 13% 0 13%;
+	/*padding: 3%;*/
+	z-index: -10;
+	border-radius: 20px;
+	/*background-color: rgb(255,255,255,0.8);*/
+		/* IE10+ */ 
+	background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%);
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(255,255,255,0.9)), color-stop(100, rgba(255,255,255,0.9)));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%);
+
+	/* W3C Markup */ 
+	background-image: radial-gradient(ellipse closest-side at center, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%);
+}
+#about-container h2{
+	width: 29%;
+	font-size: 3vw;
+	display: block;
+	position: relative;
+	color:#4F1F42;
+}
+#about-container h2 .logo{
+    width: 38%;
+    height: 129%;
+	position: absolute;
+    margin: -5px 0 0 15px;
+	background-image:url(../img/logo-vinho-2.png);
+    background-size: cover;
 }
 
+#about-container article{
+	margin-top:5%;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+}
+
+#about-container article strong{
+	font-weight: bold;
+	color:#4F1F42;
+}
 /*team container*/
 body.team #home-container{
 	opacity: 0;
@@ -311,14 +359,32 @@ body.team #home-container{
 body.team #team-container{
 	opacity: 1;
 	position: absolute;
-	z-index: 1000;
+	z-index: 10;
 }
 #team-container{
 	opacity: 0;
 	width:70%;
 	height: 95%;
 	margin: 5% 15% 0 15%;
-	z-index: -1000;
+	z-index: -10;
+
+	/* IE10+ */ 
+	background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(79,31,66,1)), color-stop(100, rgba(255,255,255,0)));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
+
+	/* W3C Markup */ 
+	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(255,255,255,0) 100%);
 }
 #team-container h2{
 	position: absolute;
