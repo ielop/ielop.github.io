@@ -20,7 +20,7 @@ body.ielop{
 h2,h3{
 	font-family: 'Open Sans', sans-serif;
 	color: #CADC70;
-	font-size: 2.3vw;
+	font-size: 30px;
 	position: absolute;
 }
 
@@ -376,7 +376,6 @@ body.team #team-container{
 	opacity: 0;
 	width:100%;
 	height: 100%;
-	padding: 30% 15% 0 15%;
 	box-sizing: border-box;
 	z-index: -10;
 
@@ -400,64 +399,142 @@ body.team #team-container{
 }
 #team-container h2{
 	position: absolute;
-	top: 56vh;
-    left: 18vw;
+	top: 36%;
+    left: 9%;
+}
+#team-container .staff-container{
+	position: relative;
+	margin: 10% 10%;
+	width: 80%;
+	height: 80%;
 }
 #team-container .circle{
 	position: absolute;
 	border-radius: 50%;
-	width: 1.1vw;
-	height: 1.1vw;
-	border: 1vw solid white;
-    left: 48vw;
+	width: 1.1vh;
+	height: 1.1vh;
+	border: 1vh solid white;
     top: 26vh;
+    left: 68vh;
 }
 #team-container .circle span{
-	height:0.5vw;
-	width:0.5vw;
+	height:0.5vh;
+	width:0.5vh;
 	background-color: #CADC70;
 	border-radius: 50%;
 	display: block;
 	position: relative;
-    top: 0.31vh;
-    left: 0.31vw;
+    top: 0.4vh;
+    left: 0.29vh;
 }
 #team-container .circle.second{
-    width: 2.1vw;
-    height: 2.1vw;
-    border: 2vw solid white;
-    left: 33.1vw;
+    width: 2.1vh;
+    height: 2.1vh;
+    border: 2vh solid white;
     top: 58vh;
+    left: 53.1vh;
 }
 #team-container .circle.second span{
-	height:0.9vw;
-	width:0.9vw;
+	height:0.9vh;
+	width:0.9vh;
     top: 0.61vh;
-    left: 0.61vw;
+    left: 0.61vh;
 }
-
-#team-container .staff img{
+#team-container .staff{
 	position: absolute;
+	width: 20vh;
+	height: 20vh;
+	text-decoration: none;
+	color:#4F1F42;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+
+/*	-webkit-transition: opacity 1s;  Safari 
+    transition: opacity 1s;*/
+}
+#team-container .staff img,
+#team-container .staff p{
+	position: relative;
 	border-radius: 50%;
-	width: 10vw;
+	/*opacity: 0;*/
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: white;
 }
-#team-container .staff.first img{
-	width: 23vw;
-	left: 25vw;
-	top: 25vh;
+#team-container .staff p{
+	padding: 40% 10% 0 10%;
+	box-sizing: border-box;
 }
-#team-container .staff.second img{
-	width: 12vw;
-	top: 31vh;
-	left: 50vw;
-}
-#team-container .staff.third img{
-    width: 20vw;
-    top: 46vh;
-    left: 42vw;
-}
-#team-container .staff.fourth img{
-    top: 41vh;
-    left: 60vw;
+#team-container .staff strong{
+	font-weight: bold;
 }
 
+#team-container .staff-container .staff .photo{
+	/*opacity: 1;*/
+	display: block;
+}
+#team-container .staff-container .staff.first{
+	width: 33vh;
+	height: 33vh;
+	top: 15vh;
+	left: 25%;
+}
+#team-container .staff-container .staff.second{
+	width: 22vh;
+	height: 22vh;
+	top: 21vh;
+	left: 50%;
+}
+#team-container .staff-container .staff.third{
+    width: 30vh;
+    height: 30vh;
+    top: 36vh;
+    left: 42%;
+}
+#team-container .staff-container .staff.fourth{
+    top: 31vh;
+    left: 60%;
+}
+
+#team-container .staff-container.fourth .staff .fourth-content{
+	/*opacity: 1;*/
+	display: block;
+}
+#team-container .staff-container.fourth .staff .first-content,
+#team-container .staff-container.fourth .staff .second-content,
+#team-container .staff-container.fourth .staff .third-content{
+	/*opacity: 0;*/
+	display: none;
+}
+#team-container .staff-container.first .staff .first-content{
+	/*opacity: 1;*/
+	display: block;
+}
+#team-container .staff-container.first .staff .fourth-content,
+#team-container .staff-container.first .staff .second-content,
+#team-container .staff-container.first .staff .third-content{
+	/*opacity: 0;*/
+	display: none;
+}
+#team-container .staff-container.second .staff .second-content{
+	/*opacity: 1;*/
+	display: block;
+}
+#team-container .staff-container.second .staff .first-content,
+#team-container .staff-container.second .staff .fourth-content,
+#team-container .staff-container.second .staff .third-content{
+	/*opacity: 0;*/
+	display: none;
+}
+#team-container .staff-container.third .staff .third-content{
+	/*opacity: 1;*/
+	display: block;
+}
+#team-container .staff-container.third .staff .first-content,
+#team-container .staff-container.third .staff .second-content,
+#team-container .staff-container.third .staff .fourth-content{
+	/*opacity: 0;*/
+	display: none;
+}

@@ -3,6 +3,8 @@
 
 	// Define vaiables to be used in this function
 	var menuLinks = document.getElementsByClassName('menu-link'),
+	staff = document.getElementsByClassName('staff'),
+	staffContainer = document.getElementsByClassName('staff-container')[0],
 	// elBg = document.getElementById('background'),
 	elLogo = document.getElementsByClassName('logo')[0];
 
@@ -48,17 +50,34 @@
 		}
 	}
 
+	function overStaff(event) {
+		var el = event.target.tagName=='A'?event.target:event.target.parentNode;
+		staffContainer.className = 'staff-container '+el.className.replace('staff','').trim();
+	}
+
+	function leaveStaff(event) {
+		staffContainer.className="staff-container";
+	}
+
 	// Add eventlistener to the menu links
 	//Attach event to change color canvas
 	if (document.addEventListener) {
+	    window.addEventListener('resize',logoLoad,false);
 	    for (var i = 0; i < menuLinks.length; i++) {
 	        menuLinks[i].addEventListener('click', changeBgColor, false);
-	        window.addEventListener('resize',logoLoad,false);
+	    }
+	    for (var i = 0; i < staff.length; i++) {
+	        staff[i].addEventListener('mouseover', overStaff, false);
+	        staff[i].addEventListener('mouseleave', leaveStaff, false);
 	    }
 	} else if (document.attachEvent)  {
+	    window.addEventListener('onresize',logoLoad);
 	    for (var i = 0; i < menuLinks.length; i++) {
 	        menuLinks[i].attachEvent('onclick', changeBgColor);
-	        window.addEventListener('onresize',logoLoad);
+	    }
+	    for (var i = 0; i < staff.length; i++) {
+	        staff[i].attachEvent('onmouseover', overStaff);
+	        staff[i].attachEvent('onmouseleave', leaveStaff);
 	    }
 	}
 
