@@ -398,9 +398,9 @@ body.team #team-container{
 	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%);
 }
 #team-container h2{
-	position: absolute;
-	top: 36%;
-    left: 9%;
+    position: absolute;
+    top: 61%;
+    left: 28%;
 }
 #team-container .staff-container{
 	position: relative;
@@ -409,13 +409,13 @@ body.team #team-container{
 	height: 80%;
 }
 #team-container .circle{
-	position: absolute;
-	border-radius: 50%;
-	width: 1.1vh;
-	height: 1.1vh;
-	border: 1vh solid white;
-    top: 26vh;
-    left: 68vh;
+    position: absolute;
+    border-radius: 50%;
+    width: 1.1vh;
+    height: 1.1vh;
+    border: 1vh solid white;
+    top: 39%;
+    left: 47%;
 }
 #team-container .circle span{
 	height:0.5vh;
@@ -424,21 +424,21 @@ body.team #team-container{
 	border-radius: 50%;
 	display: block;
 	position: relative;
-    top: 0.4vh;
+    top: 0.3vh;
     left: 0.29vh;
 }
 #team-container .circle.second{
     width: 2.1vh;
     height: 2.1vh;
     border: 2vh solid white;
-    top: 58vh;
-    left: 53.1vh;
+    top: 63%;
+    left: 32%;
 }
 #team-container .circle.second span{
 	height:0.9vh;
 	width:0.9vh;
-    top: 0.61vh;
-    left: 0.61vh;
+    top: 0.62vh;
+    left: 0.62vh;
 }
 #team-container .staff{
 	position: absolute;
@@ -446,7 +446,7 @@ body.team #team-container{
 	height: 20vh;
 	text-decoration: none;
 	color:#4F1F42;
-	font-size: 30px;
+	font-size: 25px;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 
@@ -464,11 +464,12 @@ body.team #team-container{
 	background-color: white;
 }
 #team-container .staff p{
-	padding: 40% 10% 0 10%;
+	padding: 35% 10% 0 10%;
 	box-sizing: border-box;
 }
 #team-container .staff strong{
 	font-weight: bold;
+	font-size: 30px;
 }
 
 #team-container .staff-container .staff .photo{
@@ -476,26 +477,26 @@ body.team #team-container{
 	display: block;
 }
 #team-container .staff-container .staff.first{
-	width: 33vh;
-	height: 33vh;
-	top: 15vh;
-	left: 25%;
+    width: 35vh;
+    height: 35vh;
+    top: 6%;
+    left: 23%;
 }
 #team-container .staff-container .staff.second{
-	width: 22vh;
-	height: 22vh;
-	top: 21vh;
-	left: 50%;
+    width: 22vh;
+    height: 22vh;
+    top: 21%;
+    left: 50%;
 }
 #team-container .staff-container .staff.third{
-    width: 30vh;
-    height: 30vh;
-    top: 36vh;
-    left: 42%;
+    width: 28vh;
+    height: 28vh;
+    top: 46%;
+    left: 38%;
 }
 #team-container .staff-container .staff.fourth{
-    top: 31vh;
-    left: 60%;
+    top: 48%;
+    left: 59%;
 }
 
 #team-container .staff-container.fourth .staff .fourth-content{
