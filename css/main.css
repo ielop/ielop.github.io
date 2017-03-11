@@ -80,6 +80,7 @@ section{
 #home-container .subtitle{
 	top:16.5vw;
 	left:30.7%;
+	font-size: 2vw;
 }
 
 .info{
@@ -107,7 +108,7 @@ section{
 	margin: 0 auto;
 }
 .menu{
-	position: absolute;
+	position: fixed;
 	right: 40px;
 	top: 40px;
 	z-index: 20;
@@ -285,6 +286,7 @@ body.ielop #home-container{
 #ielop-container .portfolio.cacatua img.logo{
 	position: absolute;
 	margin: 11% 0 0 24%;
+	width:50%;
 }
 #ielop-container .portfolio.ifind {
 	background-image: url('../img/ifind-bg.jpg');
@@ -461,6 +463,7 @@ body.team #team-container{
 	display: none;
 	width: 100%;
 	height: 100%;
+	font-size: 25px;
 	background-color: white;
 }
 #team-container .staff p{
@@ -469,7 +472,7 @@ body.team #team-container{
 }
 #team-container .staff strong{
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 22px;
 }
 
 #team-container .staff-container .staff .photo{
@@ -539,3 +542,66 @@ body.team #team-container{
 	/*opacity: 0;*/
 	display: none;
 }
+
+@media (max-height:600px),(max-width:900px) { 
+	#ielop-container h2{
+		font-size: 5vw;
+		top: -3%;
+	}
+	#ielop-container .portfolio-container a.portfolio{
+		width: 30vw;
+		height:30vw;
+		margin: 2%;
+	}
+	#ielop-container .portfolio-container a.tedx img{
+		margin: 43% 10%;
+	}
+	#ielop-container .portfolio-container a.cacatua{
+		background-size: 200%;
+	}
+	#ielop-container .portfolio-container a.portfolio.cacatua img{
+    	margin: 30% 10%;
+		width: 80%;
+	}
+
+/*	#team-container h2{
+	    top: 57%;
+	    left: 21%;
+	}*/
+	#team-container .staff p{
+		padding: 30% 5% 0 10%;
+		font-size: 70%;
+	}
+	#team-container .staff strong{
+		font-size: 70%;
+	}
+	#team-container h2{
+		top:6%;
+	}
+	#team-container .staff-container{
+		margin-left:5vw; 
+	}
+	#team-container .staff-container a.staff.first{
+		width: 40vw;
+		height: 40vw;
+	}
+
+	#team-container .staff-container a.staff.second{
+		width: 35vw;
+		height: 35vw;
+    	top: 43%;
+	}
+	#team-container .staff-container a.staff.third{
+		width: 30vw;
+		height: 30vw;
+		top: 52%;
+		left: 8%;
+	}
+	#team-container .staff-container a.staff.fourth{
+		width: 25vw;
+		height: 25vw;
+		top: 79%;
+		left: 34%;
+	}
+
+ }

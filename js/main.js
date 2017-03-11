@@ -38,6 +38,7 @@
 	}
 	function changeBgColor(event) {
 		event.preventDefault();
+		window.scrollTo(0,0);
 		var clicked = event.target.tagName!="SPAN"?event.target:event.target.parentNode,
 		menuItem = clicked.parentNode,
 		menuActive = document.querySelector('.menu-item.active');
