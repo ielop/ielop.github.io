@@ -543,7 +543,7 @@ body.team #team-container{
 	display: none;
 }
 
-@media (max-height:600px),(max-width:900px) { 
+@media (max-width:700px) { 
 	#ielop-container h2{
 		font-size: 5vw;
 		top: -3%;
