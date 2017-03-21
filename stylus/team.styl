@@ -12,28 +12,11 @@ body
 		height: 100%
 		box-sizing: border-box
 
-		/* IE10+ */ 
-		background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
-
-		/* Mozilla Firefox */ 
-		background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
-
-		/* Opera */ 
-		background-image: -o-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
-
-		/* Webkit (Safari/Chrome 10) */ 
-		background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(79,31,66,1)), color-stop(100, rgba(79,31,66,0)))
-
-		/* Webkit (Chrome 11+) */ 
-		background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
-
-		/* W3C Markup */ 
-		background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
-
 		h2
 			position: absolute
 			top: 61%
 			left: 28%
+			color:greenColor
 
 		.staff-container
 			position: relative
@@ -49,6 +32,7 @@ body
 				border: 1vh solid white
 				top: 39%
 				left: 47%
+				z-index: 100
 
 				span
 					height:0.5vh
@@ -84,7 +68,7 @@ body
 				text-align: center
 
 				img, p
-					position: relative
+					position: absolute
 					border-radius: 50%
 					/*opacity: 0*/
 					display: none
@@ -92,8 +76,9 @@ body
 					height: 100%
 					font-size: 25px
 					background-color: white
-					box-shadow: 1px 1px 20px black
-
+					box-shadow: 1px 1px 100px purpleColor
+					top:0
+					left:0
 
 				p
 					padding: 35% 10% 0 10%
@@ -103,35 +88,34 @@ body
 					font-weight: bold
 					font-size: 22px
 
-				.photo
-					display: block
-
 				.staff-content
 					display:none;
 					// to each staff
-					&.first
-						width: 35vh
-						height: 35vh
-						top: 6%
-						left: 23%
+						
+					&.photo
+						display: block
+						
+				&.first
+					width: 35vh
+					height: 35vh
+					top: 6%
+					left: 23%
 
-					&.second
-						width: 22vh
-						height: 22vh
-						top: 21%
-						left: 50%
+				&.second
+					width: 22vh
+					height: 22vh
+					top: 21%
+					left: 50%
 
-					&.third
-						width: 28vh
-						height: 28vh
-						top: 46%
-						left: 38%
+				&.third
+					width: 28vh
+					height: 28vh
+					top: 46%
+					left: 38%
 
-					&.fourth
-						top: 48%
-						left: 59%
-				
-
+				&.fourth
+					top: 48%
+					left: 59%
 
 			&.first 
 				.staff 
