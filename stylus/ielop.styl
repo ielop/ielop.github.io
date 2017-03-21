@@ -13,10 +13,10 @@ body
 				color: purpleColor
 				
 			.menu-link
-				border: 10px solid purpleColor
+				border: 10px solid greenColor
 				
 				span
-					background-color: greenColor
+					background-color: purpleColor
 			
 	#ielop-container
 		/*background-color: white*/
@@ -72,11 +72,13 @@ body
 				margin: 2% 0 2% 4%;
 				float:left
 				position:relative
+				/*horizontal vertical [blur] [spread] color*/
 				box-shadow: 0 0 15px gray
 				
-				/*horizontal vertical [blur] [spread] color*/
-				/*box-shadow: 1px 1px 2px 20px black*/
-					
+				&.empty
+					background:none
+					box-shadow:none
+
 				&.ieptbma
 					background-image: url("../img/ieptbma-bg.png")
 					background-size: 100% 100%
