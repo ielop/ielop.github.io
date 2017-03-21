@@ -1,0 +1,62 @@
+/* Home Container*/
+body.home
+	#ielop-container,
+	#about-container,
+	#team-container
+		opacity: 0
+		
+	#home-container
+		width: 100%
+		opacity: 1
+
+		/* IE10+ */ 
+		background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		/* Mozilla Firefox */ 
+		background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		/* Opera */ 
+		background-image: -o-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(79,31,66,1)), color-stop(100, rgba(79,31,66,0)))
+
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		/* W3C Markup */ 
+		background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+
+		.logo
+			display: block
+			position: absolute
+			margin:0 30%
+			width: 40%
+
+		.subtitle
+			top:16.5vw
+			left:30.7%
+			font-size: 2vw
+
+
+		.info
+			position: fixed
+			width:100%
+			bottom: 10px
+			color: #CADC70
+			padding:0 15px
+			box-sizing: border-box
+			font-family: 'Open Sans', sans-serif
+			font-weight: bold
+			font-size: 12px
+			text-align: left
+			line-height: 23px
+			text-align: center
+
+			img
+				margin-bottom: -5px
+
+		.logo-hover
+			width: 40%
+			margin: 0 auto

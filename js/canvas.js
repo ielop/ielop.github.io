@@ -109,7 +109,7 @@ function makeCircles() {
         }
     }
 
-    // The animation
+    // The animation home loop
     function animationLoop() {
         var c, speed = 1;
 
@@ -183,13 +183,6 @@ function makeCircles() {
             renderContent();
             // console.log(renderTheme);
         }
-
-        // if(newTheme=='team') {
-        //     paused=true;
-        // }
-        // else{
-        //     paused=false;
-        // }
     }
 
     //Attach event to change color canvas

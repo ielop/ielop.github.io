@@ -1,0 +1,408 @@
+@import "reset.css"
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Open+Sans:300')
+
+@font-face{
+	font-family: 'Bulo Light'
+	src:url(bulo-light.woff)
+}
+
+blackColor=#000000
+whiteColor=#ffffff 
+greenColor=#CADC70
+purpleColor=#4F1F42
+
+
+body
+	background-color: whiteColor
+	overflow: hidden
+
+
+	h2,h3
+		font-family: 'Open Sans', sans-serif
+		color: greenColor
+		font-size: 30px
+		position: absolute
+
+
+	#background
+		position: fixed
+		background-color: #4F1F42
+		z-index: -10
+		top: 0
+		left:0
+		-webkit-transition: background-color 1.5s /* Safari */
+	    transition: background-color 1.5s
+
+	section
+		position: absolute
+		-webkit-transition: opacity 0.9s /* Safari */
+	    transition: opacity 0.9s
+
+
+	.menu
+		position: fixed
+		right: 40px
+		top: 40px
+		z-index: 20
+
+		.menu-item
+			width:220px
+			height: 40px
+			margin-bottom: 20px
+
+			.menu-title
+				color: #CADC70
+				float: left
+				width: 175px
+				font-family: 'Open Sans', sans-serif
+				/*font-weight: bold*/
+				font-size: 13px
+				line-height: 36px
+				text-align: right
+				opacity: 0
+				-webkit-transition: all 0.5s /* Safari */
+			    transition: all 0.5s
+
+
+			.menu-link
+				display: block
+				height: 15px
+				width: 15px
+				border-radius: 50%
+				border: 10px solid white
+				float: right
+				-webkit-transition: border 0.5s /* Safari */
+			    transition: border 0.5s
+
+				span
+					height: 7px
+					width: 7px
+					background-color: #CADC70
+					border-radius: 50%
+					display: block
+					position: relative
+					top: 4px
+					left: 4px
+					-webkit-transition: all 0.5s /* Safari */
+				    transition: all 0.5s
+				
+				:hover,.active
+					.menu-title
+						opacity:1
+
+					.menu-link
+						span
+							transform: scale(4)
+							
+
+@import "home.styl"
+
+
+
+/* About */
+body.about #home-container{
+	opacity: 0
+}
+body.about #about-container{
+	opacity: 1
+}
+#about-container{
+	opacity: 0
+	position: absolute
+	z-index: 10
+	width: 100%
+	height:100%
+	box-sizing: border-box
+	padding: 8% 13% 0 13%
+	/*padding: 3%*/
+	z-index: -10
+	border-radius: 20px
+	/*background-color: rgb(255,255,255,0.8)*/
+		/* IE10+ */ 
+	background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(255,255,255,0.9)), color-stop(100, rgba(255,255,255,0.9)))
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+
+	/* W3C Markup */ 
+	background-image: radial-gradient(ellipse closest-side at center, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+}
+#about-container h2{
+	width: 29%
+	font-size: 3vw
+	display: block
+	position: relative
+	color:#4F1F42
+}
+#about-container h2 .logo{
+    width: 38%
+    height: 129%
+	position: absolute
+    margin: -5px 0 0 15px
+	background-image:url(../img/logo-vinho-2.png)
+    background-size: cover
+}
+
+#about-container article{
+	margin-top:5%
+	font-family: 'Open Sans', sans-serif
+	line-height: 30px
+}
+
+#about-container article strong{
+	font-weight: bold
+	color:#4F1F42
+}
+/*team container*/
+body.team #home-container{
+	opacity: 0
+}
+body.team #team-container{
+	opacity: 1
+	position: absolute
+	z-index: 10
+}
+#team-container{
+	opacity: 0
+	width:100%
+	height: 100%
+	box-sizing: border-box
+	z-index: -10
+
+	/* IE10+ */ 
+	background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(79,31,66,1)), color-stop(100, rgba(79,31,66,0)))
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+	/* W3C Markup */ 
+	background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+}
+#team-container h2{
+    position: absolute
+    top: 61%
+    left: 28%
+}
+#team-container .staff-container{
+	position: relative
+	margin: 10% 10%
+	width: 80%
+	height: 57%
+}
+#team-container .circle{
+    position: absolute
+    border-radius: 50%
+    width: 1.1vh
+    height: 1.1vh
+    border: 1vh solid white
+    top: 39%
+    left: 47%
+}
+#team-container .circle span{
+	height:0.5vh
+	width:0.5vh
+	background-color: #CADC70
+	border-radius: 50%
+	display: block
+	position: relative
+    top: 0.3vh
+    left: 0.29vh
+}
+#team-container .circle.second{
+    width: 2.1vh
+    height: 2.1vh
+    border: 2vh solid white
+    top: 63%
+    left: 32%
+}
+#team-container .circle.second span{
+	height:0.9vh
+	width:0.9vh
+    top: 0.62vh
+    left: 0.62vh
+}
+#team-container .staff{
+	position: absolute
+	width: 20vh
+	height: 20vh
+	text-decoration: none
+	color:#4F1F42
+	font-size: 25px
+	font-family: 'Open Sans', sans-serif
+	text-align: center
+
+
+/*	-webkit-transition: opacity 1s  Safari 
+    transition: opacity 1s*/
+}
+#team-container .staff img,
+#team-container .staff p{
+	position: relative
+	border-radius: 50%
+	/*opacity: 0*/
+	display: none
+	width: 100%
+	height: 100%
+	font-size: 25px
+	background-color: white
+	box-shadow: 1px 1px 20px black
+
+}
+#team-container .staff p{
+	padding: 35% 10% 0 10%
+	box-sizing: border-box
+}
+#team-container .staff strong{
+	font-weight: bold
+	font-size: 22px
+}
+
+#team-container .staff-container .staff .photo{
+	/*opacity: 1*/
+	display: block
+}
+#team-container .staff-container .staff.first{
+    width: 35vh
+    height: 35vh
+    top: 6%
+    left: 23%
+}
+#team-container .staff-container .staff.second{
+    width: 22vh
+    height: 22vh
+    top: 21%
+    left: 50%
+}
+#team-container .staff-container .staff.third{
+    width: 28vh
+    height: 28vh
+    top: 46%
+    left: 38%
+}
+#team-container .staff-container .staff.fourth{
+    top: 48%
+    left: 59%
+}
+
+#team-container .staff-container.fourth .staff .fourth-content{
+	/*opacity: 1*/
+	display: block
+}
+#team-container .staff-container.fourth .staff .first-content,
+#team-container .staff-container.fourth .staff .second-content,
+#team-container .staff-container.fourth .staff .third-content{
+	/*opacity: 0*/
+	display: none
+}
+#team-container .staff-container.first .staff .first-content{
+	/*opacity: 1*/
+	display: block
+}
+#team-container .staff-container.first .staff .fourth-content,
+#team-container .staff-container.first .staff .second-content,
+#team-container .staff-container.first .staff .third-content{
+	/*opacity: 0*/
+	display: none
+}
+#team-container .staff-container.second .staff .second-content{
+	/*opacity: 1*/
+	display: block
+}
+#team-container .staff-container.second .staff .first-content,
+#team-container .staff-container.second .staff .fourth-content,
+#team-container .staff-container.second .staff .third-content{
+	/*opacity: 0*/
+	display: none
+}
+#team-container .staff-container.third .staff .third-content{
+	/*opacity: 1*/
+	display: block
+}
+#team-container .staff-container.third .staff .first-content,
+#team-container .staff-container.third .staff .second-content,
+#team-container .staff-container.third .staff .fourth-content{
+	/*opacity: 0*/
+	display: none
+}
+
+@media (max-width:700px) { 
+	#ielop-container h2{
+		font-size: 5vw
+		top: -3%
+	}
+	#ielop-container .portfolio-container a.portfolio{
+		width: 30vw
+		height:30vw
+		margin: 2%
+	}
+	#ielop-container .portfolio-container a.tedx img{
+		margin: 43% 10%
+	}
+	#ielop-container .portfolio-container a.cacatua{
+		background-size: 200%
+	}
+	#ielop-container .portfolio-container a.portfolio.cacatua img{
+    	margin: 30% 10%
+		width: 80%
+	}
+
+/*	#team-container h2{
+	    top: 57%
+	    left: 21%
+	}*/
+	#team-container .staff p{
+		padding: 30% 5% 0 10%
+		font-size: 70%
+	}
+	#team-container .staff strong{
+		font-size: 70%
+	}
+	#team-container h2{
+		top:6%
+	}
+	#team-container .staff-container{
+		margin-left:5vw 
+	}
+	#team-container .staff-container a.staff.first{
+		width: 40vw
+		height: 40vw
+	}
+
+	#team-container .staff-container a.staff.second{
+		width: 35vw
+		height: 35vw
+    	top: 43%
+	}
+	#team-container .staff-container a.staff.third{
+		width: 30vw
+		height: 30vw
+		top: 52%
+		left: 8%
+	}
+	#team-container .staff-container a.staff.fourth{
+		width: 25vw
+		height: 25vw
+		top: 79%
+		left: 34%
+	}
+
+}

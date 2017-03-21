@@ -1,13 +1,3 @@
-/*
-green #CADC70
-purple #4F1F42
-*/
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Open+Sans:300');
-
-@font-face{
-	font-family: 'Bulo Light';
-	src:url(bulo-light.woff);
-}
 
 body{
 	background-color: #ffffff;
@@ -204,20 +194,24 @@ body.ielop #home-container{
 
 #ielop-container h2{
 	top: -6%;
+	left: 60%;
 	color:#4F1F42;
 	font-size: 3vw;
+	position: absolute;
 }
 #ielop-container .portfolio-container{
 	margin-top: 3%;
 }
 #ielop-container .portfolio{
-	position: relative;
-	border-radius: 20px;
+	position: absolute;
+	border-radius: 50%;
 	background-color: white;
 	width: 15vw;
 	height: 15vw;
-	float:left;
+	/*float:left;*/
 	margin: 0 0 1.6vw 0;
+	/*horizontal vertical [blur] [spread] color*/
+	/*box-shadow: 1px 1px 2px 20px black;*/
 }
 /*ieptbma*/
 #ielop-container .portfolio.ieptbma{
@@ -240,13 +234,9 @@ body.ielop #home-container{
 }
 
 /*tedxruaportugal*/
-#ielop-container .portfolio.tedx{
-	width: 43.3vw;
-	margin-left: 1.6vw;
-}
 #ielop-container .portfolio.tedx img{
 	width: 80%;
-	margin: 12% 10%;
+	margin: 45% 10%;
 }
 #ielop-container .portfolio.tedx img.logo-2{
 	display: none;
@@ -263,8 +253,6 @@ body.ielop #home-container{
 #ielop-container .portfolio.cacatua{
 	overflow: hidden;
 	position: relative;
-	margin: 0 1.6vw;
-	width: 30vw;
     background: url(../img/cacatua-bg-branco.png) 50% 58% no-repeat;
 }
 /*#ielop-container .portfolio.cacatua:hover{
@@ -285,14 +273,15 @@ body.ielop #home-container{
 }
 #ielop-container .portfolio.cacatua img.logo{
 	position: absolute;
-	margin: 11% 0 0 24%;
-	width:50%;
+	margin: 31% 0 0 16%;
+	width:70%;
 }
 #ielop-container .portfolio.ifind {
 	background-image: url('../img/ifind-bg.jpg');
 }
 #ielop-container .portfolio.ifind img{
-	margin:10% 21%;
+	margin:20% 30%;
+	width: 40%;
 	-webkit-transition: transform 1s; /* Safari */
     transition: transform 1s;
 }
@@ -408,7 +397,7 @@ body.team #team-container{
 	position: relative;
 	margin: 10% 10%;
 	width: 80%;
-	height: 80%;
+	height: 57%;
 }
 #team-container .circle{
     position: absolute;
@@ -452,6 +441,7 @@ body.team #team-container{
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 
+
 /*	-webkit-transition: opacity 1s;  Safari 
     transition: opacity 1s;*/
 }
@@ -465,6 +455,8 @@ body.team #team-container{
 	height: 100%;
 	font-size: 25px;
 	background-color: white;
+	box-shadow: 1px 1px 20px black;
+
 }
 #team-container .staff p{
 	padding: 35% 10% 0 10%;
