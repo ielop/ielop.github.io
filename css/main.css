@@ -155,10 +155,10 @@ body.ielop .menu-item .menu-title {
   color: #4f1f42;
 }
 body.ielop .menu-item .menu-link {
-  border: 10px solid #4f1f42;
+  border: 10px solid #cadc70;
 }
 body.ielop .menu-item .menu-link span {
-  background-color: #cadc70;
+  background-color: #4f1f42;
 }
 body #ielop-container {
 /*background-color: white*/
@@ -212,9 +212,12 @@ body #ielop-container .portfolio-container .portfolio {
   margin: 2% 0 2% 4%;
   float: left;
   position: relative;
-  box-shadow: 0 0 15px #808080;
 /*horizontal vertical [blur] [spread] color*/
-/*box-shadow: 1px 1px 2px 20px black*/
+  box-shadow: 0 0 15px #808080;
+}
+body #ielop-container .portfolio-container .portfolio.empty {
+  background: none;
+  box-shadow: none;
 }
 body #ielop-container .portfolio-container .portfolio.ieptbma {
   background-image: url("../img/ieptbma-bg.png");
