@@ -1,15 +1,73 @@
 
-body.about 
+body
+	&.about 
+		
+		#about-container
+			opacity: 1
+			z-index: 10
 	
-	#background
-		background-color: whiteColor
+		#background
+			background-color: whiteColor
 
-	.menu-item 
-		.menu-title
-			color: purpleColor
-			
-		.menu-link
-			border: 10px solid greenColor
-			
-			span
-				background-color: greenColor
+		.menu-item 
+			.menu-title
+				color: purpleColor
+				
+			.menu-link
+				border: 10px solid purpleColor
+				
+				span
+					background-color: greenColor
+				
+	#about-container
+		position: absolute
+		width: 100%
+		height:100%
+		box-sizing: border-box
+		padding: 8% 13% 0 13%
+		/*padding: 3%*/
+		border-radius: 20px
+		/*background-color: rgb(255,255,255,0.8)*/
+			/* IE10+ */ 
+		background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+
+		/* Mozilla Firefox */ 
+		background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+
+		/* Opera */ 
+		background-image: -o-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(255,255,255,0.9)), color-stop(100, rgba(255,255,255,0.9)))
+
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+
+		/* W3C Markup */ 
+		background-image: radial-gradient(ellipse closest-side at center, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)
+		
+		h2
+			width: 29%
+			font-size: 3vw
+			display: block
+			position: relative
+			color:purpleColor
+		
+			.logo
+				width: 38%
+				height: 129%
+				position: absolute
+				margin: -5px 0 0 15px
+				background-image:url(../img/logo-vinho-2.png)
+				background-size: cover
+		
+
+		article
+			margin-top:5%
+			font-family: 'Open Sans', sans-serif
+			line-height: 30px
+
+			strong
+				font-weight: bold
+				color:purpleColor
+	

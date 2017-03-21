@@ -1,0 +1,219 @@
+/*team container*/
+body
+	&.team 
+		
+		#team-container
+			opacity: 1
+			z-index: 10
+
+	#team-container
+		position: absolute
+		width:100%
+		height: 100%
+		box-sizing: border-box
+
+		/* IE10+ */ 
+		background-image: -ms-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		/* Mozilla Firefox */ 
+		background-image: -moz-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		/* Opera */ 
+		background-image: -o-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, rgba(79,31,66,1)), color-stop(100, rgba(79,31,66,0)))
+
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-radial-gradient(center, ellipse closest-side, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		/* W3C Markup */ 
+		background-image: radial-gradient(ellipse closest-side at center, rgba(79,31,66,1) 0%, rgba(79,31,66,0) 100%)
+
+		h2
+			position: absolute
+			top: 61%
+			left: 28%
+
+		.staff-container
+			position: relative
+			margin: 10% 10%
+			width: 80%
+			height: 57%
+
+			.circle
+				position: absolute
+				border-radius: 50%
+				width: 1.1vh
+				height: 1.1vh
+				border: 1vh solid white
+				top: 39%
+				left: 47%
+
+				span
+					height:0.5vh
+					width:0.5vh
+					background-color: greenColor
+					border-radius: 50%
+					display: block
+					position: relative
+					top: 0.3vh
+					left: 0.29vh
+
+				&.second
+					width: 2.1vh
+					height: 2.1vh
+					border: 2vh solid white
+					top: 63%
+					left: 32%
+
+					span
+						height:0.9vh
+						width:0.9vh
+						top: 0.62vh
+						left: 0.62vh
+
+			.staff
+				position: absolute
+				width: 20vh
+				height: 20vh
+				text-decoration: none
+				color:purpleColor
+				font-size: 25px
+				font-family: 'Open Sans', sans-serif
+				text-align: center
+
+				img, p
+					position: relative
+					border-radius: 50%
+					/*opacity: 0*/
+					display: none
+					width: 100%
+					height: 100%
+					font-size: 25px
+					background-color: white
+					box-shadow: 1px 1px 20px black
+
+
+				p
+					padding: 35% 10% 0 10%
+					box-sizing: border-box
+
+				strong
+					font-weight: bold
+					font-size: 22px
+
+				.photo
+					display: block
+
+				.staff-content
+					display:none;
+					// to each staff
+					&.first
+						width: 35vh
+						height: 35vh
+						top: 6%
+						left: 23%
+
+					&.second
+						width: 22vh
+						height: 22vh
+						top: 21%
+						left: 50%
+
+					&.third
+						width: 28vh
+						height: 28vh
+						top: 46%
+						left: 38%
+
+					&.fourth
+						top: 48%
+						left: 59%
+				
+
+
+			&.first 
+				.staff 
+					.first
+						display: block
+
+			&.fourth 
+				.staff 
+					.fourth
+						display: block
+
+			&.second 
+				.staff 
+					.second
+						display: block
+
+			&.third 
+				.staff 
+					.third
+						display: block
+
+					
+@media (max-width:700px)  
+	#ielop-container 
+		h2
+			font-size: 5vw
+			top: -3%
+		
+		.portfolio-container 
+			.portfolio
+				width: 30vw
+				height:30vw
+				margin: 2%
+	
+				.tedx 
+					img
+						margin: 43% 10%
+	
+				.cacatua
+					background-size: 200%
+	
+					img
+						margin: 30% 10%
+						width: 80%
+	
+	#team-container 
+		h2
+			top:6%
+			
+		.staff-container
+			margin-left:5vw 
+			
+			.staff 
+				p
+					padding: 30% 5% 0 10%
+					font-size: 70%
+		
+				strong
+					font-size: 70%
+
+	
+				.first
+					width: 40vw
+					height: 40vw
+				
+
+				.second
+					width: 35vw
+					height: 35vw
+					top: 43%
+	
+				.third
+					width: 30vw
+					height: 30vw
+					top: 52%
+					left: 8%
+	
+				.fourth
+					width: 25vw
+					height: 25vw
+					top: 79%
+					left: 34%
+				
+
+
