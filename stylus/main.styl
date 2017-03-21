@@ -1,0 +1,111 @@
+@import "reset.css"
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Open+Sans:300')
+
+@font-face{
+	font-family: 'Bulo Light'
+	src:url(bulo-light.woff)
+}
+
+blackColor=#000000
+whiteColor=#ffffff 
+greenColor=#CADC70
+purpleColor=#4F1F42
+
+
+body
+	background-color: whiteColor
+	overflow: hidden
+
+
+	h2,h3
+		font-family: 'Open Sans', sans-serif
+		color: greenColor
+		font-size: 30px
+		position: absolute
+
+	#background
+		position: fixed
+		background-color: purpleColor
+		z-index: -10
+		top: 0
+		left:0
+		-webkit-transition: background-color 1.5s /* Safari */
+		transition: background-color 1.5s
+
+	section
+		position: absolute
+		opacity:0
+		/* Safari */
+		-webkit-transition: opacity 0.9s 
+		transition: opacity 0.9s
+		z-index: -10
+
+	.menu
+		position: fixed
+		right: 40px
+		top: 40px
+		z-index: 20
+
+		.menu-item
+			width:220px
+			height: 40px
+			margin-bottom: 20px
+
+			.menu-title
+				color: greenColor
+				float: left
+				width: 175px
+				font-family: 'Open Sans', sans-serif
+				/*font-weight: bold*/
+				font-size: 13px
+				line-height: 36px
+				text-align: right
+				opacity: 0
+				-webkit-transition: all 0.5s /* Safari */
+				transition: all 0.5s
+
+			.menu-link
+				display: block
+				height: 15px
+				width: 15px
+				border-radius: 50%
+				border: 10px solid white
+				float: right
+				-webkit-transition: border 0.5s /* Safari */
+				transition: border 0.5s
+
+				span
+					height: 7px
+					width: 7px
+					background-color: greenColor
+					border-radius: 50%
+					display: block
+					position: relative
+					top: 4px
+					left: 4px
+					-webkit-transition: all 0.5s /* Safari */
+					transition: all 0.5s
+				
+			&:hover
+					.menu-title
+						opacity:1
+
+					.menu-link
+						span
+							transform: scale(4)
+							
+			&.active
+					.menu-title
+						opacity:1
+
+					.menu-link
+						span
+							transform: scale(4)
+							
+@import "home.styl"
+@import "ielop.styl"
+@import "about.styl"
+@import "team.styl"
+
+
