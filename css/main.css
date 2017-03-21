@@ -185,6 +185,7 @@ body #ielop-container .portfolio-content h2 {
   color: #4f1f42;
   font-size: 40px;
   margin-bottom: 50px;
+  position: relative;
 }
 body #ielop-container .portfolio-content p {
   font-family: 'Open Sans', sans-serif;
