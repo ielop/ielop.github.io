@@ -1,0 +1,24 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Open+Sans:300");
+
+section{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../pesquisa/img/azulejo-100x100.jpg);
+}
+
+.home .destaque{
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin: 20vh auto;
+}
+
+.home .destaque .titulo{
+	width: 500px;
+	height: 400px;
+	background-image: url('../pesquisa/img/banner-old-text.png');
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
