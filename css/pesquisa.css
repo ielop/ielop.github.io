@@ -1,11 +1,20 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Open+Sans:300");
 
+/* colors
+  #94B9D1 
+  #ffffff
+  #0A2436 
+  #1D6391
+  #2A485C
+*/
+
 section{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	font-family: "PT Sans", arial;
+	display: none;
 }
 .buttons a{
 	position: fixed;
@@ -45,6 +54,31 @@ section{
 .buttons a.next{
 	left: auto;
 	right:5vw;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	height: 200px;
+	color: #2A485C;
+	width: 100%;
+}
+.footer span{
+	position: absolute;
+    right: 240px;
+    top: 130px;
+    font-size: 20px;
+    font-family: "PT Sans",arial;
+}
+
+.footer .logo{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+/*Home*/
+body.home section.home{
+	display: block;
 }
 .home .destaque{
 	position: relative;
@@ -121,23 +155,35 @@ section{
 	left: 18.75px;
 	background-color: #0A2436;
 }
-.footer{
-	position: fixed;
-	bottom: 0;
+
+/*Companies*/
+body.companies section.companies{
+	display: block;
+}
+section.companies h2{
+	color: #1D6391;
+	font-family: "PT Sans", arial;
+	font-weight: bold;
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10%;
+}
+section.companies .logos{
+	width: 70%;
+	margin: 50px 15%;
+	display: block;
+	position: absolute;
+}
+section.companies .logos li{
+	width: 200px;
 	height: 200px;
-	color: #2A485C;
+	float: left;
+	position: relative;
+	margin: 0 30px 10px 0;
+}
+section.companies .logos li img{
+	position: relative;
 	width: 100%;
 }
-.footer span{
-	position: absolute;
-    right: 240px;
-    top: 130px;
-    font-size: 20px;
-    font-family: "PT Sans",arial;
-}
 
-.footer .logo{
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-}
