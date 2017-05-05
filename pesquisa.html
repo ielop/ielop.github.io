@@ -23,10 +23,15 @@
 			<h1 class="titulo">Mercado de Trabalho <br> em São Luís/MA</h1>	
 			<h2>Área: TI</h2>
 			<span class="circle bottom"></span>
+			<button class="bt-start">Iniciar</button>
 		</div>
 	</section>
 	<section class="companies">
-		<h2>Empresas contratantes</h2>
+		<div class="content">
+			<h2>Empresas contratantes</h2>
+			<p>A ielop resolveu inovar e descobrir como Mercado de TI de São Luís é estruturado. Com ajuda dos profissionais da área, conseguimos realizar o levantamento das empresas que atuam no mercado e quais tecnologias estão sendo utilizadas.</p>
+			<p>Com essas informações, alunos e profissionais da área de TI poderão se benefeciar das informações levantadas e se preparar melhor par o mercado de trabalho.</p>
+		</div>
 		<div class="logos">
 			<ul>
 				<li class="tabelionato">
@@ -73,7 +78,16 @@
 			<img class="logo" src="img/logo-transp.png">
 		</a>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
-		
+		$(document).ready(function() {
+			$('section.home').addClass('show');
+
+			$('.bt-start').click(function() {
+				$('section.home').removeClass('show').fadeOut('slow',function() {
+					$('body').removeClass('home').addClass('companies');
+				});
+			});
+		});
 	</script>
 </body>
