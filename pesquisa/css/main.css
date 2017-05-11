@@ -61,6 +61,7 @@ section{
 	height: 200px;
 	color: #2A485C;
 	width: 100%;
+	z-index: -1;
 }
 .footer span{
 	position: absolute;
@@ -217,6 +218,8 @@ body.home section.home{
 body.companies section.companies{
 	display: block;
 	padding:10%;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 section.companies h2{
 	color: #1D6391;
@@ -226,21 +229,37 @@ section.companies h2{
 	width: 100%;
 	margin-top: 10%;
 }
+section.companies .computer{
+	position: absolute;
+	bottom: -150px;
+	left: -150px;
+	z-index: -1;
+}
+section.companies .circuit{
+	position: absolute;
+	top: -20px;
+	right: 0;
+}
 section.companies .content,
 section.companies .logos{
 	width: 50%;
-	/*margin: 50px 15%;*/
 	display: block;
+	float: left;
+	padding:30px;
+	box-sizing: border-box;
 	/*position: absolute;*/
 }
 section.companies .content p{
 	color: #0A2436;
 	font-family: "PT Sans", arial;
 	font-size: 20px;
+	text-align: justify;
+	padding-top: 15px;
+	line-height: 30px;
 }
 section.companies .logos li{
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	float: left;
 	position: relative;
 	margin: 0 30px 10px 0;
