@@ -83,7 +83,7 @@ body.home .buttons{
 }
 body.home section.home{
 	display: block;
-	background-image:url(../pesquisa/img/circuit-bg2.jpg);
+	background-image:url(../img/circuit-bg2.jpg);
 	background-size:cover;
 	background-repeat: no-repeat;
 	z-index: -2;
