@@ -209,7 +209,7 @@ body #ielop-container .portfolio-content {
   box-sizing: border-box;
   background-color: #fff;
   right: -20%;
-  box-shadow: 0 0 100px #000;
+  /*box-shadow: 0 0 100px #000;*/
   text-align: center;
 }
 body #ielop-container .portfolio-content h2 {
@@ -219,6 +219,7 @@ body #ielop-container .portfolio-content h2 {
   font-size: 40px;
   margin-bottom: 50px;
   position: relative;
+  font-weight: bold;
 }
 body #ielop-container .portfolio-content p {
   font-family: 'Open Sans', sans-serif;
@@ -247,7 +248,7 @@ body #ielop-container .portfolio-container .portfolio {
   float: left;
   position: relative;
 /*horizontal vertical [blur] [spread] color*/
-  box-shadow: 0 0 15px #808080;
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
 }
 body #ielop-container .portfolio-container .portfolio.empty {
   background: none;
@@ -392,10 +393,28 @@ body #team-container {
   box-sizing: border-box;
 }
 body #team-container h2 {
-  position: absolute;
-  top: 61%;
-  left: 28%;
-  color: #cadc70;
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    color: #4f1f42;
+    /*background-color: #cadc70;*/
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    /* line-height: 20px; */
+    box-sizing: border-box;
+    padding: 70px 0;
+    text-align: center;
+    font-weight: bold;
+    /* vertical-align: middle; */
+    background: rgba(202,220,112,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(202,220,112,1)), color-stop(100%, rgba(148,166,58,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cadc70', endColorstr='#94a63a', GradientType=1 );
 }
 body #team-container .staff-container {
   position: relative;
@@ -456,7 +475,7 @@ body #team-container .staff-container .staff p {
   height: 100%;
   font-size: 25px;
   background-color: #fff;
-  box-shadow: 1px 1px 100px #4f1f42;
+  box-shadow: 1px 1px 100px rgba(0,0,0,0.55);
   top: 0;
   left: 0;
 }
@@ -486,15 +505,37 @@ body #team-container .staff-container .staff.second {
   top: 21%;
   left: 50%;
 }
+body #team-container .staff-container .staff.second p{
+  padding: 25% 10% 0 10%;
+}
 body #team-container .staff-container .staff.third {
   width: 28vh;
   height: 28vh;
   top: 46%;
   left: 38%;
 }
+body #team-container .staff-container .staff.third p.first{
+  padding: 25% 10% 0 10%;
+}
 body #team-container .staff-container .staff.fourth {
   top: 48%;
   left: 59%;
+}
+body #team-container .staff-container .staff.third p{
+  padding: 25% 10% 0 10%;
+}
+body #team-container .staff-container .staff.second p.third,
+body #team-container .staff-container .staff.second p.first,
+body #team-container .staff-container .staff.third p.fourth,
+body #team-container .staff-container .staff.third p.second{
+  background: rgba(202,220,112,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(202,220,112,1)), color-stop(100%, rgba(148,166,58,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(202,220,112,1) 0%, rgba(148,166,58,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cadc70', endColorstr='#94a63a', GradientType=1 );
 }
 body #team-container .staff-container.first .staff .first {
   display: block;

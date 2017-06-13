@@ -76,6 +76,53 @@ section{
 	bottom: 20px;
 	right: 20px;
 }
+/*Loading*/
+body.loading .loading{
+	display: block;
+}
+body.loading .buttons{
+	display: none;
+}
+section.loading{
+	width: 500px;
+	height: 500px;
+	margin: 20vh 20vh;
+	/*box-sizing: border-box;*/
+}
+section.loading .circle{
+	transform: scale(1);
+}
+section.loading .circle.bottom{
+}
+section .circle{
+	position: absolute;
+	transform: scale(0);
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	right: 10px;
+	top: 350px;
+	border: 50px solid #94B9D1;
+	background-color: #ffffff;
+	transition: transform ease-in .5s;
+}
+section .circle.bottom:before{
+	content: '';
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	top: 25px;
+	left: 25px;
+	background-color: #1D6391;
+}
+section .circle.bottom:hover{
+	border: 50px solid #1D6391;
+}
+section .circle.bottom:hover:before{
+	background-color: #0A2436;
+}
 
 /*Home*/
 body.home .buttons{
@@ -113,7 +160,7 @@ body.home section.home{
     font-size: 30px;
     margin-top: 20px;
 }
-.home .destaque .circle{
+section .circle{
 	position: absolute;
 	transform: scale(0);
 	border-radius: 50%;
@@ -125,7 +172,7 @@ body.home section.home{
 	background-color: #ffffff;
 	transition: transform ease-in .5s;
 }
-.home .destaque .circle.bottom:before{
+section .circle.bottom:before{
 	content: '';
 	position: relative;
 	display: block;
@@ -136,13 +183,13 @@ body.home section.home{
 	left: 25px;
 	background-color: #1D6391;
 }
-.home .destaque .circle.bottom:hover{
+section .circle.bottom:hover{
 	border: 50px solid #1D6391;
 }
-.home .destaque .circle.bottom:hover:before{
+section .circle.bottom:hover:before{
 	background-color: #0A2436;
 }
-.home .destaque .circle.right{
+section .circle.right{
 	right: -30px;
 	top: 310px;
 	width: 100px;
@@ -152,10 +199,10 @@ body.home section.home{
 	z-index: -1;
 	transition: transform ease-in 0.7s 0.5s;
 }
-.home .destaque .circle.right:hover{
+section .circle.right:hover{
 	background-color: white;
 }
-.home .destaque .circle.top{
+section .circle.top{
 	display: block;
 	width:75px;
 	height:75px;
@@ -166,7 +213,7 @@ body.home section.home{
 	z-index: -1;
 	transition: transform ease-in 1s;
 }
-.home .destaque .circle.top:before{
+section .circle.top:before{
 	content: '';
 	position: relative;
 	display: block;
@@ -177,11 +224,11 @@ body.home section.home{
 	left: 18.75px;
 	background-color: #0A2436;
 }
-.home .destaque .circle.top:hover{
+section .circle.top:hover{
 	border-color: #0A2436;
 	background-color: white;
 }
-.home .destaque .circle.top:hover:before{
+section .circle.top:hover:before{
 	background-color: #1D6391;
 }
 .home .bt-start{
