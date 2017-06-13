@@ -1,0 +1,318 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Open+Sans:300");
+
+/* colors
+  #94B9D1 
+  #ffffff
+  #0A2436 
+  #1D6391
+  #2A485C
+*/
+
+section{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: "PT Sans", arial;
+	display: none;
+}
+.buttons a{
+	position: fixed;
+	border-radius: 50%;
+	background-color:#94B9D1;
+	width: 70px;
+	height: 70px;
+	top:45%;
+	left: 5vw;
+}
+.buttons a:before,
+.buttons a:after{
+	content:'';
+	position: absolute;
+	top: 30px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	display: block;
+	width: 30px;
+	height: 10px;
+	left: 22px;
+	transform: rotate(45deg);
+	top: 20px;
+}
+.buttons a.prev:before{
+	transform: rotate(-45deg);
+	left: 17px;
+}
+.buttons a.prev:after{
+	top: 35px;
+	left: 17px;
+}
+.buttons a.next:after{
+	transform: rotate(-45deg);
+	top: 35px;
+}
+.buttons a.next{
+	left: auto;
+	right:5vw;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	height: 200px;
+	color: #2A485C;
+	width: 100%;
+	z-index: -1;
+}
+.footer span{
+	position: absolute;
+    right: 240px;
+    top: 130px;
+    font-size: 20px;
+    font-family: "PT Sans",arial;
+}
+
+.footer .logo{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+/*Loading*/
+body.loading .loading{
+	display: block;
+}
+body.loading .buttons{
+	display: none;
+}
+section.loading{
+	width: 500px;
+	height: 500px;
+	margin: 20vh 20vh;
+	/*box-sizing: border-box;*/
+}
+section.loading .circle{
+	transform: scale(1);
+}
+section.loading .circle.bottom{
+}
+section .circle{
+	position: absolute;
+	transform: scale(0);
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	right: 10px;
+	top: 350px;
+	border: 50px solid #94B9D1;
+	background-color: #ffffff;
+	transition: transform ease-in .5s;
+}
+section .circle.bottom:before{
+	content: '';
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	top: 25px;
+	left: 25px;
+	background-color: #1D6391;
+}
+section .circle.bottom:hover{
+	border: 50px solid #1D6391;
+}
+section .circle.bottom:hover:before{
+	background-color: #0A2436;
+}
+
+/*Home*/
+body.home .buttons{
+	display: none;
+}
+body.home section.home{
+	display: block;
+	background-image:url(../img/circuit-bg2.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	z-index: -2;
+}
+.home .destaque{
+	position: relative;
+	opacity: 0;
+	width: 500px;
+	height: 500px;
+	margin: 20vh auto;
+	background-color: #0A2436;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 200px;
+	box-sizing:border-box;
+	transition: opacity ease-in .3s;
+}
+.home .destaque h1{
+    color: #ffffff;
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+}
+.home .destaque h2{
+    color: #1D6391;
+    display: block;
+    font-size: 30px;
+    margin-top: 20px;
+}
+section .circle{
+	position: absolute;
+	transform: scale(0);
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	right: 10px;
+	top: 350px;
+	border: 50px solid #94B9D1;
+	background-color: #ffffff;
+	transition: transform ease-in .5s;
+}
+section .circle.bottom:before{
+	content: '';
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	top: 25px;
+	left: 25px;
+	background-color: #1D6391;
+}
+section .circle.bottom:hover{
+	border: 50px solid #1D6391;
+}
+section .circle.bottom:hover:before{
+	background-color: #0A2436;
+}
+section .circle.right{
+	right: -30px;
+	top: 310px;
+	width: 100px;
+	height: 100px;
+	border:none;
+	background-color: #1D6391;
+	z-index: -1;
+	transition: transform ease-in 0.7s 0.5s;
+}
+section .circle.right:hover{
+	background-color: white;
+}
+section .circle.top{
+	display: block;
+	width:75px;
+	height:75px;
+	top: -30px;
+	left: 25px;
+	border:37.5px solid #1D6391;
+	background-color: #94B9D1;
+	z-index: -1;
+	transition: transform ease-in 1s;
+}
+section .circle.top:before{
+	content: '';
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	width:37.5px;
+	height:37.5px;
+	top: 18.75px;
+	left: 18.75px;
+	background-color: #0A2436;
+}
+section .circle.top:hover{
+	border-color: #0A2436;
+	background-color: white;
+}
+section .circle.top:hover:before{
+	background-color: #1D6391;
+}
+.home .bt-start{
+    position: absolute;
+	width: 150px;
+	height: 150px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	/*border:10px solid #0A2436;*/
+	border:none;
+	color: #0A2436;
+	top: 260px;
+	left: -65px;
+	font-family: "PT Sans", arial;
+	font-weight: bold;
+	font-size: 30px;
+	transform: scale(0);
+	transition: transform ease-out 0.7s 1s;
+}
+.home .bt-start:hover{
+	/*transform: scale(1.1);*/
+	background-color: #1D6391;
+	/*border-color: #1D6391;*/
+	color: white;
+}
+.home.show .destaque{
+	opacity: 1;
+}
+.home.show .bt-start,
+.home.show .destaque .circle{
+	transform: scale(1);
+}
+/*Companies*/
+body.companies section.companies{
+	display: block;
+	padding:10%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+section.companies h2{
+	color: #1D6391;
+	font-family: "PT Sans", arial;
+	font-weight: bold;
+	font-size: 40px;
+	width: 100%;
+	margin-top: 10%;
+}
+section.companies .computer{
+	position: absolute;
+	bottom: -150px;
+	left: -150px;
+	z-index: -1;
+}
+section.companies .circuit{
+	position: absolute;
+	top: -20px;
+	right: 0;
+}
+section.companies .content,
+section.companies .logos{
+	width: 50%;
+	display: block;
+	float: left;
+	padding:30px;
+	box-sizing: border-box;
+	/*position: absolute;*/
+}
+section.companies .content p{
+	color: #0A2436;
+	font-family: "PT Sans", arial;
+	font-size: 20px;
+	text-align: justify;
+	padding-top: 15px;
+	line-height: 30px;
+}
+section.companies .logos li{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: relative;
+	margin: 0 30px 10px 0;
+}
+section.companies .logos li img{
+	position: relative;
+	width: 100%;
+}
+
