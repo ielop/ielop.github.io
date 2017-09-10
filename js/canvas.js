@@ -22,7 +22,7 @@ function makeCircles() {
 
     // Circle colors allowed
     circleColors['home']=["#fff","#4F1F42","#CADC70"];
-    circleColors['team']=["#fff","#4F1F42","#CADC70"];
+    circleColors['team']=["#4F1F42","#fff","#CADC70"];
     circleColors['ielop']=["#CADC70","#fff","#4F1F42"];
     circleColors['about']=["#4F1F42","#fff","#CADC70"];
 
@@ -176,7 +176,7 @@ function makeCircles() {
         newTheme = target.parentNode.getAttribute('alt');
 
         console.log(newTheme);
-        if(newTheme!='home') paused=true;
+        if(newTheme!='home' && newTheme!='team' ) paused=true;
         else paused=false;
         // Change theme only if is different
         if(renderTheme!=newTheme){

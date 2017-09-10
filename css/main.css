@@ -395,6 +395,9 @@ body #about-container article strong {
   font-weight: bold;
   color: #4f1f42;
 }
+body.team #background{
+  background-color: #ffffff;
+}
 body.team .menu-item .menu-title {
   /*color: #4f1f42;*/
   color:  #cadc70;
